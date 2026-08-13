@@ -8,6 +8,7 @@ import {
 } from "lucide-react";
 
 import Tags from "@/components/base/Tags";
+import Button from "@/components/base/Button";
 
 export default function MonthlyInsight() {
     return (
@@ -67,14 +68,12 @@ export default function MonthlyInsight() {
                     </div>
 
                     {/* Add Expense */}
-                    <button
+                    <Button
                         type="button"
-                        className=" mt-5 inline-flex h-11 items-center justify-center gap-2 rounded-[9px] bg-btn-blue px-5 font-iceberg text-sm text-white shadow-sm transition hover:opacity-90 sm:h-12 sm:px-6
-                        "
-                    >
+                        className="font-iceberg " >
                         <Plus size={17} />
                         Add Expense
-                    </button>
+                    </Button>
                 </div>
 
                 {/* Right Insight Box */}

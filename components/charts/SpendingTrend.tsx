@@ -55,11 +55,11 @@ export default function SpendingTrend() {
             <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
 
                 <div>
-                    <h2 className="font-iceberg text-lg leading-tight text-black sm:text-xl">
+                    <h2 className="font-iceberg text-lg leading-tight text-black sm:text-xl xl:text-3xl">
                         Spending Trend
                     </h2>
 
-                    <p className="mt-0.5 font-iceberg text-[10px] text-black sm:text-xs">
+                    <p className="mt-2 font-iceberg text-[10px] text-black sm:text-xs xl:text-sm">
                         Weekly expenditure overview
                     </p>
                 </div>
@@ -99,7 +99,7 @@ export default function SpendingTrend() {
                             axisLine={false}
                             tickLine={false}
                             tick={{
-                                fontSize: 10,
+                                fontSize: 15,
                                 fill: "#000000",
                                 fontFamily: "Inter",
                             }}
@@ -129,11 +129,11 @@ export default function SpendingTrend() {
 
                                 return (
                                     <div className="rounded-lg border border-border bg-white px-3 py-2 shadow-md">
-                                        <p className="font-inter text-[10px] text-secondary">
+                                        <p className="font-inter text-[10px] xl:text-base text-secondary">
                                             {item.label}
                                         </p>
 
-                                        <p className="mt-1 font-iceberg text-sm text-primary">
+                                        <p className="mt-1 font-iceberg text-sm  xl:text-lg text-primary">
                                             ₹{item.amount.toLocaleString("en-IN")}
                                         </p>
                                     </div>
@@ -178,15 +178,15 @@ export default function SpendingTrend() {
             </div>
 
             {/* Bottom highest information */}
-            <div className="flex items-center justify-end">
+            <div className="md:mt-4 flex items-center justify-end">
 
-                <div className="flex flex-col items-end">
+                <div className="flex flex-col items-center">
 
-                    <span className="rounded-md bg-primary px-2 py-1 font-inter text-[7px] font-medium text-white sm:text-[8px]">
+                    <span className="rounded-md bg-primary px-2 py-1 font-inter text-[10px] font-medium text-white sm:text-xs xl:text-base">
                         HIGHEST
                     </span>
 
-                    <span className="mt-1 font-iceberg text-[10px] text-primary sm:text-xs">
+                    <span className="mt-1 font-iceberg text-[10px] text-primary sm:text-xs xl:text-base">
                         ₹{highest.toLocaleString("en-IN")}
                     </span>
 

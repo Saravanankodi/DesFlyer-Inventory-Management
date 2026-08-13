@@ -70,9 +70,7 @@ const highestSpending = [
 export default function SpendingSection({
     variant,
 }: SpendingSectionProps) {
-    /* =========================
-       Departmental Share
-    ========================= */
+  
 
     if (variant === "departmental") {
         return (
@@ -114,22 +112,19 @@ export default function SpendingSection({
         );
     }
 
-    /* =========================
-       Highest Spending
-    ========================= */
 
     return (
         <section className="w-full rounded-[20px] border border-border bg-white p-5 sm:p-6 lg:p-7">
 
             {/* Header */}
             <div className="mb-4 flex items-center justify-between gap-3">
-                <h2 className="font-iceberg text-xl text-black sm:text-2xl">
+                <h2 className="font-iceberg text-xl text-black sm:text-2xl xl:text-3xl">
                     Highest Spending
                 </h2>
 
                 <button
                     type="button"
-                    className="font-iceberg text-xs text-primary hover:underline sm:text-sm"
+                    className="font-iceberg text-xs text-primary hover:underline sm:text-sm xl:text-lg"
                 >
                     View All
                 </button>
@@ -166,17 +161,17 @@ export default function SpendingSection({
 
                             {/* Details */}
                             <div className="min-w-0 flex-1">
-                                <p className="truncate font-iceberg text-sm text-black sm:text-base">
+                                <p className="truncate font-iceberg text-sm text-black sm:text-base xl:text-lg">
                                     {item.name}
                                 </p>
 
-                                <p className="font-iceberg text-[10px] uppercase text-secondary sm:text-xs">
+                                <p className="font-iceberg text-[10px] uppercase text-secondary sm:text-xs xl:text-base">
                                     {item.type}
                                 </p>
                             </div>
 
                             {/* Amount */}
-                            <p className="shrink-0 font-iceberg text-sm text-black sm:text-base">
+                            <p className="shrink-0 font-iceberg text-sm text-black sm:text-base xl:text-lg">
                                 {item.amount}
                             </p>
                         </div>

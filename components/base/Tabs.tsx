@@ -37,7 +37,7 @@ export default function Tabs({
                         key={tab.id}
                         type="button"
                         onClick={() => handleTab(tab.id)}
-                        className={`relative pb-2 font-iceberg text-sm transition
+                        className={`relative pb-2 font-iceberg text-sm sm:text-base md:text-lg  transition
                             ${active
                                 ? "text-primary"
                                 : "text-black hover:text-primary"

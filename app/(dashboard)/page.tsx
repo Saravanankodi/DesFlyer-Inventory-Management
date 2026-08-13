@@ -11,7 +11,7 @@ import { Download } from 'lucide-react'
 
 function Homepage() {
   return (
-    <div className="p-8 space-y-5">
+    <div className="p-6 md:p-8 space-y-5">
       <Header
         heading="Expense Dashboard"
         description="A clear view of Desflyer's spending this month."
@@ -43,11 +43,11 @@ function Homepage() {
           className=" mx-auto flex min-h-[56px] w-full items-center justify-between gap-3 px-3 py-2 sm:px-5 md:px-6 lg:px-8 " >
           {/* Left summary */}
           <div className="min-w-0 ">
-            <p className="truncate font-iceberg text-[10px] leading-3 text-secondary sm:text-xs md:pb-2">
+            <p className="truncate font-iceberg text-[10px] leading-3 text-secondary sm:text-xs lg:text-lg md:pb-2">
               JULY MONTH SPENDING
             </p>
 
-            <p className="truncate font-iceberg text-xs leading-3 text-black sm:text-[9px] md:text-sm">
+            <p className="mt-2 truncate font-iceberg text-xs leading-3 text-black sm:text-[9px] md:text-sm lg:text-base">
               ₹84,500 · 42 Entries · 6 Missing Bills
             </p>
           </div>

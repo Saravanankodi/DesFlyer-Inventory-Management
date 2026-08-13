@@ -63,7 +63,7 @@ export default function StatsCard({
 
     return (
         <div
-            className={`grid w-full gap-4 ${variant === "dashboard"
+            className={`grid w-full gap-4  ${variant === "dashboard"
                     ? "grid-cols-2 lg:grid-cols-4"
                     : "grid-cols-2 lg:grid-cols-3"
                 }`}
@@ -71,27 +71,27 @@ export default function StatsCard({
             {cards.map((card) => (
                 <div
                     key={card.title}
-                    className="rounded-lg border border-border bg-white px-4 py-3 sm:px-5 sm:py-4"
+                    className="rounded-lg border border-border bg-white px-4 py-3 sm:px-4 sm:py-4 space-y-2 md:space-y-4"
                 >
                     {/* Title */}
-                    <p className="font-iceberg text-xs md:text-[20px] text-black">
+                    <p className="font-iceberg text-xs md:text-[20px] xl:text-2xl text-black">
                         {card.title}
                     </p>
 
                     {/* Value */}
-                    <p className="mt-1 font-iceberg text-base md:text-2xl text-black sm:text-lg">
+                    <p className="mt-1 font-iceberg text-base md:text-2xl xl:text-4xl text-black sm:text-lg">
                         {card.value}
                     </p>
 
                     {/* Description */}
-                    <p className="mt-1 font-inter text-[8px] md:text-[10px] text-secondary sm:text-[9px]">
+                    <p className="mt-1 font-inter text-[8px] md:text-xs xl:text-sm text-secondary sm:text-[9px]">
                         {card.description}
                     </p>
 
                     {/* Change */}
                     {card.change && (
                         <p
-                            className={`mt-1 font-inter text-[8px] sm:text-[9px] ${card.changeColor || "text-secondary"
+                            className={`mt-1 font-inter text-[8px] md:text-xs xl:text-sm ${card.changeColor || "text-secondary"
                                 }`}
                         >
                             {card.change}

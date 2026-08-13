@@ -12,9 +12,7 @@ interface LevelbarProps {
 
 export default function Levelbar({ variant }: LevelbarProps) {
 
-    /* =========================
-       RECIPIENT
-    ========================= */
+  
 
     if (variant === "recipient") {
         const data = [
@@ -47,13 +45,13 @@ export default function Levelbar({ variant }: LevelbarProps) {
         return (
             <div className="box w-full p-4 sm:p-5 lg:p-6">
 
-                <h2 className="font-iceberg text-base text-black sm:text-xl">
+                <h2 className="font-iceberg text-base text-black sm:text-xl xl:text-3xl">
                     Who are we spending for?
                 </h2>
 
                 <button
                     type="button"
-                    className="mt-1.5 font-iceberg text-[11px] text-primary hover:opacity-80 sm:mt-2 sm:text-sm"
+                    className="mt-1.5 font-iceberg text-[11px] text-primary hover:opacity-80 sm:mt-2 sm:text-sm xl:text-base"
                 >
                     View Breakdown
                 </button>
@@ -62,7 +60,7 @@ export default function Levelbar({ variant }: LevelbarProps) {
                     {data.map((item) => (
                         <div key={item.label} className="w-full">
 
-                            <div className="mb-1 flex items-center justify-between gap-2 font-iceberg text-[11px] sm:text-sm">
+                            <div className="mb-1 flex items-center justify-between gap-2 font-iceberg text-[11px] sm:text-sm xl:text-base">
                                 <span className="min-w-0 truncate">
                                     {item.label}
                                 </span>
@@ -89,10 +87,6 @@ export default function Levelbar({ variant }: LevelbarProps) {
         );
     }
 
-
-    /* =========================
-       SPENDING
-    ========================= */
 
     if (variant === "spending") {
         const data = [
@@ -163,9 +157,7 @@ export default function Levelbar({ variant }: LevelbarProps) {
     }
 
 
-    /* =========================
-       CATEGORY
-    ========================= */
+    
 
     if (variant === "category") {
         const data = [
@@ -204,13 +196,13 @@ export default function Levelbar({ variant }: LevelbarProps) {
         return (
             <div className="box w-full p-4 sm:p-5 lg:p-6">
 
-                <h2 className="font-iceberg text-base text-black sm:text-xl">
+                <h2 className="font-iceberg text-base text-black sm:text-xl xl:text-3xl">
                     What are we spending on?
                 </h2>
 
                 <button
                     type="button"
-                    className="mt-1.5 font-iceberg text-[11px] text-primary hover:opacity-80 sm:mt-2 sm:text-sm"
+                    className="mt-1.5 font-iceberg text-[11px] text-primary hover:opacity-80 sm:mt-2 sm:text-sm xl:text-base"
                 >
                     View All Categories
                 </button>
@@ -222,7 +214,7 @@ export default function Levelbar({ variant }: LevelbarProps) {
                             className="flex w-full items-center gap-2 sm:gap-3"
                         >
 
-                            <span className="w-20 shrink-0 truncate font-iceberg text-[11px] sm:w-[105px] sm:text-sm">
+                            <span className="w-20 shrink-0 truncate font-iceberg text-[11px] sm:w-[105px] sm:text-sm xl:text-base">
                                 {item.label}
                             </span>
 
@@ -235,7 +227,7 @@ export default function Levelbar({ variant }: LevelbarProps) {
                                 />
                             </div>
 
-                            <span className="w-14 shrink-0 text-right font-iceberg text-[11px] sm:w-[55px] sm:text-sm">
+                            <span className="w-14 shrink-0 text-right font-iceberg text-[11px] sm:w-[55px] sm:text-sm xl:text-base">
                                 {item.amount}
                             </span>
 
@@ -248,9 +240,6 @@ export default function Levelbar({ variant }: LevelbarProps) {
     }
 
 
-    /* =========================
-       BUDGET
-    ========================= */
 
     if (variant === "budget") {
         return (
@@ -293,9 +282,6 @@ export default function Levelbar({ variant }: LevelbarProps) {
     }
 
 
-    /* =========================
-       BREAKDOWN
-    ========================= */
 
     if (variant === "breakdown") {
         const data = [

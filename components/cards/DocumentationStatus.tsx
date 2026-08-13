@@ -21,7 +21,7 @@ export default function DocumentationStatus({
         <section className="w-full rounded-[20px] border border-border bg-white p-5 sm:p-6">
 
             {/* Title */}
-            <h2 className="font-iceberg text-base text-black sm:text-xl">
+            <h2 className="font-iceberg text-base text-black sm:text-xl xl:text-3xl">
                 Documentation Status
             </h2>
 
@@ -31,16 +31,16 @@ export default function DocumentationStatus({
                 {/* Bills Attached */}
                 <div className="flex items-center gap-3 rounded-lg bg-[#EEF1FF] px-4 py-3">
                     <CheckCircle2
-                        size={18}
+                        size={20}
                         className="shrink-0 text-green-600"
                     />
 
                     <div>
-                        <p className="font-iceberg text-sm text-black">
+                        <p className="font-iceberg text-sm lg:text-lg text-black">
                             {billsAttached} Bills Attached
                         </p>
 
-                        <p className="font-inter text-[10px] text-secondary">
+                        <p className="font-inter text-[10px] lg:text-sm text-secondary">
                             Verified documentation
                         </p>
                     </div>
@@ -49,16 +49,16 @@ export default function DocumentationStatus({
                 {/* Bills Missing */}
                 <div className="flex items-center gap-3 rounded-lg bg-[#FFF1F1] px-4 py-3">
                     <TriangleAlert
-                        size={18}
+                        size={20}
                         className="shrink-0 text-red-500"
                     />
 
                     <div>
-                        <p className="font-iceberg text-sm text-red-500">
+                        <p className="font-iceberg text-sm lg:text-lg text-red-500">
                             {billsMissing} Bills Missing
                         </p>
 
-                        <p className="font-inter text-[10px] text-secondary">
+                        <p className="font-inter text-[10px] lg:text-sm text-secondary">
                             Action required
                         </p>
                     </div>
@@ -67,16 +67,16 @@ export default function DocumentationStatus({
                 {/* To Review */}
                 <div className="flex items-center gap-3 rounded-lg bg-[#EEF1FF] px-4 py-3">
                     <CircleMinus
-                        size={18}
+                        size={20}
                         className="shrink-0 text-orange-500"
                     />
 
                     <div>
-                        <p className="font-iceberg text-sm text-black">
+                        <p className="font-iceberg text-sm lg:text-lg text-black">
                             {toReview} To Review
                         </p>
 
-                        <p className="font-inter text-[10px] text-secondary">
+                        <p className="font-inter text-[10px] lg:text-sm text-secondary">
                             Pending verification
                         </p>
                     </div>
