@@ -44,7 +44,7 @@ export default function ExpenseFilters({
 
 
 
-            <div className="grid grid-cols-1 md:grid-cols-[1fr_1fr_1fr_1fr_0.5fr] items-center gap-2 px-3 pt-3 sm:gap-2.5 sm:px-4 lg:px-0 ">
+            <div className="grid grid-cols-2 md:grid-cols-[1fr_1fr_1fr_1fr_0.5fr] items-center gap-2 px-3  sm:gap-2.5 sm:px-4 lg:px-0 ">
 
                 {/* Paid For */}
                 <button
@@ -83,7 +83,7 @@ export default function ExpenseFilters({
 
                 {/* Date Range */}
                 <div
-                    className=" flex h-9 min-w-[205px] flex-1 items-center rounded-lg border border-border bg-white px-2.5 sm:flex-none   "
+                    className=" flex h-9 min-w-[155px] flex-1 items-center rounded-lg border border-border bg-white px-2.5 sm:flex-none   "
                 >
                     <CalendarDays
                         size={15}
@@ -119,7 +119,7 @@ export default function ExpenseFilters({
 
                 {/* Amount Range */}
                 <div
-                    className=" flex h-9 min-w-[165px] flex-1 items-center rounded-lg border border-border bg-white px-2.5 sm:flex-none                    "
+                    className="hidden sm:flex h-9 min-w-[155px] flex-1 items-center rounded-lg border border-border bg-white px-2.5 sm:flex-none                    "
                 >
                     <span className="mr-2 text-xs text-secondary">
                         ₹
@@ -153,6 +153,8 @@ export default function ExpenseFilters({
                 </div>
 
                 {/* More Filters */}
+              
+
                 <button
                     type="button"
                     onClick={() =>
@@ -172,15 +174,13 @@ export default function ExpenseFilters({
 
                         transition-colors
 
-                        ${showMoreFilters
-                            ? "bg-primary/10 text-primary"
-                            : "text-primary hover:bg-primary/10"
-                        }
+                     bg-primary/10 text-primary  hover:bg-primary/10"
+                      
                     `}
                 >
                     <SlidersHorizontal size={15} />
 
-                    <span className="hidden xs:inline sm:inline">
+                    <span className="flex items-center justify-center xs:inline sm:inline">
                         More Filters
                     </span>
                 </button>
@@ -190,7 +190,7 @@ export default function ExpenseFilters({
 
 
 
-            <div className="flex flex-wrap items-center gap-2 px-3 py-3 sm:px-4 lg:px-0">
+            <div className="hidden sm:flex flex-wrap items-center gap-2 px-3 py-3 sm:px-4 lg:px-0">
 
                 <FilterTag
                     label="Paid For"
@@ -217,8 +217,42 @@ export default function ExpenseFilters({
 
             {showMoreFilters && (
                 <div
-                    className=" grid grid-cols-1 gap-3 border-t border-border px-3 py-3 sm:grid-cols-2 sm:px-4 lg:grid-cols-4 lg:px-0    "
+                    className=" grid grid-cols-2 gap-3 border-t border-border mt-3 px-3 py-3  sm:px-4 lg:grid-cols-4 lg:px-0    "
                 >
+                    {/* Amount Range */}
+                    <div
+                        className="md:hidden flex h-9 min-w-[155px] flex-1 items-center rounded-lg border border-border bg-white px-2.5 sm:flex-none                    "
+                    >
+                        <span className="mr-2 text-xs text-secondary">
+                            ₹
+                        </span>
+
+                        <input
+                            type="number"
+                            placeholder="Min"
+                            value={minAmount}
+                            onChange={(e) =>
+                                setMinAmount(e.target.value)
+                            }
+                            className=" min-w-0 w-full bg-transparent font-inter text-xs outline-none placeholder:text-secondary
+                        "
+                        />
+
+                        <span className="px-2 text-secondary">
+                            −
+                        </span>
+
+                        <input
+                            type="number"
+                            placeholder="Max"
+                            value={maxAmount}
+                            onChange={(e) =>
+                                setMaxAmount(e.target.value)
+                            }
+                            className=" min-w-0 w-full bg-transparent font-inter text-xs outline-none placeholder:text-secondary
+                        "
+                        />
+                    </div>
                     <FilterSelect
                         label="Category"
                         value="All Categories"
@@ -243,7 +277,7 @@ export default function ExpenseFilters({
 
 
             <div
-                className=" flex min-h-[48px] flex-col justify-center gap-3  px-3 py-2 sm:flex-row sm:items-center sm:justify-between sm:px-4 lg:px-0  "
+                className=" flex min-h-[48px] items-center  justify-between gap-3  px-3 py-2 sm:flex-row sm:items-center sm:justify-between sm:px-4 lg:px-0  "
             >
 
                 {/* Summary */}
@@ -335,10 +369,7 @@ function FilterSelect({
             type="button"
             className=" flex h-9 items-center justify-between rounded-lg border border-border bg-white px-3 font-inter text-xs hover:border-primary            "
         >
-            <span>
-                <span className="text-secondary">
-                    {label}:
-                </span>{" "}
+            <span>               
                 {value}
             </span>
 

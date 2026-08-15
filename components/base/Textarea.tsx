@@ -20,7 +20,7 @@ const Textarea = ({
         <div className="w-full">
 
             {label && (
-                <label className="mb-1.5 block font-inter text-xs text-secondary">
+                <label className="mb-1.5 block font-inter text-xs md:text-sm xl:text-base text-secondary">
                     {label}
                 </label>
             )}

@@ -60,17 +60,17 @@ export default function Profilecard({
             <div className="flex items-center gap-2">
                 {isEmployee ? (
                     <UserRound
-                        size={20}
+                        size={22}
                         className="text-primary"
                     />
                 ) : (
                     <Building2
-                        size={20}
+                        size={22}
                         className="text-primary"
                     />
                 )}
 
-                <h2 className="font-iceberg text-lg text-black sm:text-xl">
+                <h2 className="font-iceberg text-2xl text-black sm:text-3xl">
                     {isEmployee
                         ? "Top Expensive Employees"
                         : "Top Expensive Clients"}
@@ -96,7 +96,7 @@ export default function Profilecard({
                             </div>
                         ) : (
                             <div
-                                className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-full font-iceberg text-sm ${index === 0
+                                className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-full font-iceberg text-xl ${index === 0
                                         ? "bg-blue-100 text-primary"
                                         : "bg-green-100 text-green-600"
                                     }`}
@@ -107,17 +107,17 @@ export default function Profilecard({
 
                         {/* Details */}
                         <div className="min-w-0 flex-1">
-                            <p className="truncate font-iceberg text-xs text-black sm:text-sm">
+                            <p className="truncate font-iceberg text-lg text-black sm:text-xl">
                                 {item.name}
                             </p>
 
-                            <p className="font-iceberg text-[10px] text-secondary sm:text-xs">
+                            <p className="font-iceberg text-sm text-secondary sm:text-base">
                                 {item.subtitle}
                             </p>
                         </div>
 
                         {/* Amount */}
-                        <p className="shrink-0 font-iceberg text-xs text-black sm:text-sm">
+                        <p className="shrink-0 font-iceberg text-lg text-black sm:text-xl">
                             {item.amount}
                         </p>
 

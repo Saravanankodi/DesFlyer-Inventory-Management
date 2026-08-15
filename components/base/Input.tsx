@@ -22,7 +22,7 @@ const Input = ({
         <div className="w-full">
             {/* Label */}
             {label && (
-                <label className="mb-1.5 block font-inter text-xs text-secondary">
+                <label className="mb-1.5 md:mb-2 xl:mb-4 block font-inter text-sm md:text-sm xl:text-base text-secondary">
                     {label}
                 </label>
             )}
@@ -47,7 +47,7 @@ const Input = ({
                 {/* Input */}
                 <input
                     {...props}
-                    className={` min-w-0 flex-1 bg-transparent font-inter text-sm md:text-sm text-black outline-none placeholder:text-secondary disabled:cursor-not-allowed disabled:opacity-50
+                    className={` min-w-0 flex-1 bg-transparent font-inter   text-black outline-none placeholder:text-black disabled:cursor-not-allowed disabled:opacity-50
                         ${className}
                     `}
                 />

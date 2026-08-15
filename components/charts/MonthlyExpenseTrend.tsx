@@ -73,7 +73,7 @@ export default function MonthlyExpenseTrend() {
             <div
                 className=" flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
                 <h2
-                    className=" font-iceberg text-xl leading-tight text-[#172033] sm:text-2xl md:text-[26px]">
+                    className=" font-iceberg text-xl leading-tight text-[#172033] sm:text-2xl md:text-3xl">
                     Monthly Expense Trend
                 </h2>
 
@@ -114,7 +114,7 @@ export default function MonthlyExpenseTrend() {
                             interval={0}
                             tick={{
                                 fontFamily: "Inter",
-                                fontSize: 11,
+                                fontSize: 13,
                                 fill: "#344054",
                             }}
                             dy={8}
@@ -161,7 +161,7 @@ export default function MonthlyExpenseTrend() {
                         <Line
                             type="monotone"
                             dataKey="previous"
-                            stroke="#E3EDFF"
+                            stroke="#E5EAF1"
                             strokeWidth={2}
                             strokeDasharray="8 8"
                             dot={false}
@@ -193,7 +193,7 @@ export default function MonthlyExpenseTrend() {
             {/* ================= LEGEND ================= */}
 
             <div
-                className=" mt-5 flex flex-wrap items-center gap-x-8 gap-y-3 font-iceberg text-xs text-[#344054] sm:mt-6 sm:text-sm ">
+                className=" mt-5 flex flex-wrap items-center gap-x-8 gap-y-3 font-iceberg text-base text-[#344054] sm:mt-6 sm:text-lg ">
                 {/* Current Period */}
                 <div className="flex items-center gap-2">
                     <span

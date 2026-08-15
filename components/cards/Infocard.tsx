@@ -80,7 +80,7 @@ export default function SpendingSection({
                     Departmental Share
                 </h2>
 
-                <div className="mt-6 grid grid-cols-1 gap-5 sm:grid-cols-2 sm:gap-6">
+                <div className="mt-6 grid grid-cols-2 gap-5  sm:gap-6">
                     {departments.map((item) => {
                         const Icon = item.icon;
 
@@ -96,11 +96,11 @@ export default function SpendingSection({
 
                                 {/* Details */}
                                 <div>
-                                    <p className="font-iceberg text-sm text-black sm:text-base">
+                                    <p className="font-iceberg text-base text-black sm:text-xl">
                                         {item.name}
                                     </p>
 
-                                    <p className="font-iceberg text-xs text-secondary sm:text-sm">
+                                    <p className="font-iceberg text-sm text-secondary sm:text-sm">
                                         {item.amount} ({item.percentage})
                                     </p>
                                 </div>
@@ -118,13 +118,13 @@ export default function SpendingSection({
 
             {/* Header */}
             <div className="mb-4 flex items-center justify-between gap-3">
-                <h2 className="font-iceberg text-xl text-black sm:text-2xl xl:text-3xl">
+                <h2 className="font-iceberg text-2xl text-black sm:text-2xl xl:text-3xl">
                     Highest Spending
                 </h2>
 
                 <button
                     type="button"
-                    className="font-iceberg text-xs text-primary hover:underline sm:text-sm xl:text-lg"
+                    className="font-iceberg text-sm text-primary hover:underline sm:text-sm xl:text-lg"
                 >
                     View All
                 </button>
@@ -161,17 +161,17 @@ export default function SpendingSection({
 
                             {/* Details */}
                             <div className="min-w-0 flex-1">
-                                <p className="truncate font-iceberg text-sm text-black sm:text-base xl:text-lg">
+                                <p className="truncate font-iceberg text-lg text-black sm:text-base xl:text-lg">
                                     {item.name}
                                 </p>
 
-                                <p className="font-iceberg text-[10px] uppercase text-secondary sm:text-xs xl:text-base">
+                                <p className="font-iceberg text-sm uppercase text-secondary sm:text-xs xl:text-base">
                                     {item.type}
                                 </p>
                             </div>
 
                             {/* Amount */}
-                            <p className="shrink-0 font-iceberg text-sm text-black sm:text-base xl:text-lg">
+                            <p className="shrink-0 font-iceberg text-lg text-black sm:text-base xl:text-lg">
                                 {item.amount}
                             </p>
                         </div>

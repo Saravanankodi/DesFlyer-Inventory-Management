@@ -21,7 +21,7 @@ export default function DocumentationStatus({
         <section className="w-full rounded-[20px] border border-border bg-white p-5 sm:p-6">
 
             {/* Title */}
-            <h2 className="font-iceberg text-base text-black sm:text-xl xl:text-3xl">
+            <h2 className="font-iceberg text-2xl text-black sm:text-xl xl:text-3xl">
                 Documentation Status
             </h2>
 
@@ -36,11 +36,11 @@ export default function DocumentationStatus({
                     />
 
                     <div>
-                        <p className="font-iceberg text-sm lg:text-lg text-black">
+                        <p className="font-iceberg text-base lg:text-lg text-black">
                             {billsAttached} Bills Attached
                         </p>
 
-                        <p className="font-inter text-[10px] lg:text-sm text-secondary">
+                        <p className="font-inter text-xs lg:text-sm text-secondary">
                             Verified documentation
                         </p>
                     </div>
@@ -54,11 +54,11 @@ export default function DocumentationStatus({
                     />
 
                     <div>
-                        <p className="font-iceberg text-sm lg:text-lg text-red-500">
+                        <p className="font-iceberg text-base lg:text-lg text-red-500">
                             {billsMissing} Bills Missing
                         </p>
 
-                        <p className="font-inter text-[10px] lg:text-sm text-secondary">
+                        <p className="font-inter text-xs lg:text-sm text-secondary">
                             Action required
                         </p>
                     </div>
@@ -72,11 +72,11 @@ export default function DocumentationStatus({
                     />
 
                     <div>
-                        <p className="font-iceberg text-sm lg:text-lg text-black">
+                        <p className="font-iceberg text-base lg:text-lg text-black">
                             {toReview} To Review
                         </p>
 
-                        <p className="font-inter text-[10px] lg:text-sm text-secondary">
+                        <p className="font-inter text-xs lg:text-sm text-secondary">
                             Pending verification
                         </p>
                     </div>

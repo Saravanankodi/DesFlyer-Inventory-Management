@@ -9,16 +9,19 @@ import {
 
 import Tags from "@/components/base/Tags";
 import Button from "@/components/base/Button";
+import { useRouter } from "next/navigation";
+import { Star } from "@/components/icons";
 
 export default function MonthlyInsight() {
+    const router = useRouter();
     return (
         <section
-            className=" w-full flex overflow-hidden rounded-[20px] border border-border bg-white p-5 sm:p-6 lg:p-7">
+            className=" w-full flex overflow-hidden rounded-[20px] border border-border bg-white p-4 sm:p-6 lg:p-7">
            
             {/* Main content */}
-            <div className=" grid grid-cols-1 gap-6 sm:grid-cols-[minmax(0,1fr)_1fr] sm:items-center  lg:grid-cols-[minmax(0,1fr)_1fr] lg:gap-8 " >
+            <div className="w-full  flex flex-col sm:flex-row gap-6  items-center justify-between lg:gap-8 " >
                 {/* Left */}
-                <div className="min-w-0 w-full md:space-y-8">
+                <div className="min-w-0 w-full md:space-y-8 ">
 
                     {/* Tag */}
                     <Tags
@@ -29,13 +32,13 @@ export default function MonthlyInsight() {
 
                     {/* Total */}
                     <h2
-                        className=" mt-3 font-iceberg text-[32px] leading-none text-black sm:text-[36px]  xl:text-5xl " >
+                        className=" mt-3 font-iceberg text-5xl leading-none text-black sm:text-4xl  xl:text-5xl " >
                         ₹84,500
                     </h2>
 
                     {/* Stats */}
                     <div
-                        className=" mt-4 flex flex-wrap items-center gap-x-5 gap-y-2 " >
+                        className=" my-4 flex md:flex-wrap items-center gap-x-5 gap-y-2 " >
                         <div className="flex items-center gap-1.5">
                             <Receipt
                                 size={12}
@@ -44,7 +47,7 @@ export default function MonthlyInsight() {
                             />
 
                             <span
-                                className="font-iceberg text-sm text-black sm:text-sm
+                                className="font-iceberg text-base text-black sm:text-sm
                                 "
                             >
                                 42 expenses
@@ -59,7 +62,7 @@ export default function MonthlyInsight() {
                             />
 
                             <span
-                                className=" font-iceberg text-sm text-black sm:text-sm
+                                className=" font-iceberg text-base text-black sm:text-sm
                                 "
                             >
                                 ₹2,012 average per expense
@@ -70,7 +73,8 @@ export default function MonthlyInsight() {
                     {/* Add Expense */}
                     <Button
                         type="button"
-                        className="font-iceberg " >
+                        className="font-iceberg w-full"
+                        onClick={() => router.push("/add-expense")}>
                         <Plus size={17} />
                         Add Expense
                     </Button>
@@ -78,17 +82,13 @@ export default function MonthlyInsight() {
 
                 {/* Right Insight Box */}
                 <div
-                    className=" flex min-h-[145px] w-full flex-col items-center justify-center rounded-[14px] bg-[#F0F2FF] px-5 py-5 text-center  gap-5
-                    "
+                    className=" hidden md:flex min-h-40 w-full flex-col items-center justify-center rounded-[14px] bg-[#F0F2FF] px-5 py-5 text-center  gap-5  md:px-10 md:py-10"
                 >
-                    <Sparkles
-                        size={50}
-                        strokeWidth={1.7}
-                        className="mb-3 text-[#8CB3EE]"
-                    />
+                   
+                    <Star className="w-20 h-auto"/>
 
                     <p
-                        className=" max-w-[180px] font-iceberg text-[10px] leading-[1.45] text-black sm:text-sm xl:text-lg
+                        className=" max-w-45 font-iceberg text-sm leading-[1.45] text-black sm:text-sm xl:text-lg
                         "
                     >
                         Monthly Insight: You've recorded 42

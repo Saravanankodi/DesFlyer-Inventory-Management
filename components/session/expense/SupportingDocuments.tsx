@@ -39,13 +39,13 @@ export default function SupportingDocuments() {
             {/* Header */}
             <div className="flex items-center justify-between gap-4">
 
-                <h2 className="font-iceberg text-lg text-black sm:text-xl">
+                <h2 className="font-iceberg text-2xl text-black sm:text-xl">
                     Supporting Documents
                 </h2>
 
                 <button
                     type="button"
-                    className="flex shrink-0 items-center gap-1 font-inter text-[9px] text-primary transition hover:underline sm:text-[10px]"
+                    className="flex shrink-0 items-center gap-1 font-inter text-xs text-primary transition hover:underline sm:text-base"
                 >
                     <Plus size={12} />
                     Add File
@@ -103,11 +103,11 @@ function DocumentCard({ document }: DocumentCardProps) {
             {/* Details */}
             <div className="mt-3">
 
-                <p className="truncate font-iceberg text-xs text-black sm:text-sm">
+                <p className="truncate font-iceberg text-base text-black sm:text-sm">
                     {document.name}
                 </p>
 
-                <p className="mt-0.5 font-inter text-[8px] text-secondary sm:text-[9px]">
+                <p className="mt-0.5 font-inter text-xs text-secondary sm:text-[9px]">
                     {document.size} • {document.type}
                 </p>
 

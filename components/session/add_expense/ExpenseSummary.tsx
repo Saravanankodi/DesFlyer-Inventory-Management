@@ -24,11 +24,11 @@ function SummaryRow({
     return (
         <div className="flex items-center justify-between gap-4">
 
-            <span className="font-iceberg text-xs text-secondary sm:text-lg">
+            <span className="font-iceberg text-lg text-secondary sm:text-lg">
                 {label}
             </span>
 
-            <span className="max-w-[60%] text-right font-iceberg text-xs font-medium text-black sm:text-lg">
+            <span className="max-w-[60%] text-right font-iceberg text-lg font-medium text-black sm:text-lg">
                 {value}
             </span>
 
@@ -46,12 +46,12 @@ export default function ExpenseSummary({
         <section className="w-full rounded-[18px] border border-border bg-white p-4 sm:p-5 lg:p-6">
 
             {/* Header */}
-            <h2 className="font-iceberg text-lg text-black sm:text-xl">
+            <h2 className="font-iceberg text-2xl text-black sm:text-xl xl:text-3xl">
                 Expense Summary
             </h2>
 
             {/* Preview Card */}
-            <div className="mt-4 rounded-xl border border-border bg-white p-3.5 sm:p-4">
+            <div className="mt-4 xl:mt-6 rounded-xl border border-border bg-white p-3.5 sm:p-4">
 
                 {/* Preview Header */}
                 <div className="flex items-center justify-between gap-2 border-b border-border pb-3">
@@ -63,21 +63,21 @@ export default function ExpenseSummary({
                             <FileText size={18} />
                         </span>
 
-                        <span className=" truncate font-inter text-[10px] font-semibold uppercase text-black sm:text-sm
-                        ">
+                        <span className=" truncate font-inter text-lg font-semibold uppercase text-black sm:text-sm
+                        xl:text-xl">
                             Receipt Preview
                         </span>
 
                     </div>
 
-                    <span className="shrink-0 font-inter text-[8px] text-secondary sm:text-[11px]">
+                    <span className="shrink-0 font-inter text-sm text-secondary sm:text-xs">
                         #DF-3121-2026
                     </span>
 
                 </div>
 
                 {/* Details */}
-                <div className="mt-3 space-y-2.5 md:space-y-3">
+                <div className="mt-3 md:mt-5 xl:mt-7 space-y-2.5 md:space-y-3 xl:space-y-5">
 
                     <SummaryRow
                         label="Vendor/Client"
@@ -97,10 +97,10 @@ export default function ExpenseSummary({
                 </div>
 
                 {/* Total */}
-                <div className=" mt-3 flex items-center justify-between border-t border-dashed border-border pt-3
+                <div className=" mt-3 md:mt-5 xl:mt-7 flex items-center justify-between border-t border-dashed border-border pt-3
                 ">
 
-                    <span className=" font-inter text-[8px] sm:text-sm font-semibold uppercase text-black
+                    <span className=" font-inter text-xs sm:text-sm xl:text-lg font-semibold uppercase text-black
                     ">
                         Total Amount
                     </span>
@@ -122,7 +122,7 @@ export default function ExpenseSummary({
                             strokeWidth={2}
                         />
 
-                        <span className=" font-iceberg text-[6px] uppercase sm:text-[10px]
+                        <span className=" font-iceberg text-xs uppercase sm:text-xs
                         ">
                             No Preview Attached
                         </span>
@@ -134,7 +134,7 @@ export default function ExpenseSummary({
             </div>
 
             {/* Description */}
-            <p className=" mx-auto mt-3 px-10 text-center font-inter text-[7px] text-secondary sm:text-sm
+            <p className=" mx-auto mt-3 md:mt-5 xl:mt-7 px-10 text-center font-inter text-xs text-secondary sm:text-sm
             ">
                 This is a digital generated preview based on your
                 current inputs.

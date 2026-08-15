@@ -74,24 +74,24 @@ export default function StatsCard({
                     className="rounded-lg border border-border bg-white px-4 py-3 sm:px-4 sm:py-4 space-y-2 md:space-y-4"
                 >
                     {/* Title */}
-                    <p className="font-iceberg text-xs md:text-[20px] xl:text-2xl text-black">
+                    <p className="font-iceberg text-xl md:text-2xl xl:text-3xl text-black">
                         {card.title}
                     </p>
 
                     {/* Value */}
-                    <p className="mt-1 font-iceberg text-base md:text-2xl xl:text-4xl text-black sm:text-lg">
+                    <p className="mt-1 font-iceberg text-3xl md:text-2xl xl:text-4xl text-black sm:text-lg">
                         {card.value}
                     </p>
 
                     {/* Description */}
-                    <p className="mt-1 font-inter text-[8px] md:text-xs xl:text-sm text-secondary sm:text-[9px]">
+                    <p className="mt-1 font-inter text-xs md:text-xs xl:text-sm text-secondary sm:text-[9px]">
                         {card.description}
                     </p>
 
                     {/* Change */}
                     {card.change && (
                         <p
-                            className={`mt-1 font-inter text-[8px] md:text-xs xl:text-sm ${card.changeColor || "text-secondary"
+                            className={`mt-1 font-inter text-xs md:text-xs xl:text-sm ${card.changeColor || "text-secondary"
                                 }`}
                         >
                             {card.change}

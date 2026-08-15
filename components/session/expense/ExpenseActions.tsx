@@ -14,7 +14,7 @@ export default function ExpenseActions() {
     return (
         <section className="w-full rounded-[20px] border border-border bg-white p-5 shadow-sm sm:p-6 lg:p-7">
 
-            <p className="font-inter text-[9px] uppercase tracking-[0.18em] text-black">
+            <p className="font-inter text-sm uppercase tracking-[0.18em] text-black">
                 Actions
             </p>
 
@@ -23,7 +23,7 @@ export default function ExpenseActions() {
                 {/* Edit */}
                 <button                    
                     type="button"
-                    className="flex h-9 w-full items-center gap-3 rounded-lg border border-border bg-white px-3 font-inter text-xs text-black transition hover:bg-btn-blue hover:text-white"
+                    className="flex h-9 w-full items-center gap-3 rounded-lg border border-border bg-white px-3 font-inter text-base sm:text-base text-black transition hover:bg-btn-blue hover:text-white"
                 >
                     <Edit3 size={15} />
                     Edit Expense
@@ -32,7 +32,7 @@ export default function ExpenseActions() {
                 {/* Download */}
                 <button
                     type="button"
-                    className="flex h-9 w-full items-center gap-3 rounded-lg border border-border bg-white px-3 font-inter text-xs text-black transition hover:bg-btn-blue hover:text-white"
+                    className="flex h-9 w-full items-center gap-3 rounded-lg border border-border bg-white px-3 font-inter text-base sm:text-base text-black transition hover:bg-btn-blue hover:text-white"
                 >
                     <Download size={15} />
                     Download PDF
@@ -41,7 +41,7 @@ export default function ExpenseActions() {
                 {/* Print */}
                 <button
                     type="button"
-                    className="flex h-9 w-full items-center gap-3 rounded-lg border border-border bg-white px-3 font-inter text-xs text-black transition hover:bg-btn-blue hover:text-white"
+                    className="flex h-9 w-full items-center gap-3 rounded-lg border border-border bg-white px-3 font-inter text-base sm:text-base text-black transition hover:bg-btn-blue hover:text-white"
                 >
                     <Printer size={15} />
                     Print
@@ -50,7 +50,7 @@ export default function ExpenseActions() {
                 {/* Mark Reviewed */}
                 <button
                     type="button"
-                    className="flex h-9 w-full items-center gap-3 rounded-lg border border-border bg-white px-3 font-inter text-xs text-[#16A34A] transition hover:border-[#16A34A] hover:bg-[#16A34A]/10 "
+                    className="flex h-9 w-full items-center gap-3 rounded-lg border border-border bg-white px-3 font-inter text-base sm:text-base text-[#16A34A] transition hover:border-[#16A34A] hover:bg-[#16A34A]/10 "
                 >
                     <CheckCheck size={15} />
                     Mark as Reviewed
@@ -64,14 +64,14 @@ export default function ExpenseActions() {
             {/* Delete */}
             <button
                 type="button"
-                className="flex h-9 w-full items-center justify-between rounded-lg border border-red-200 px-3 font-inter text-xs text-red-500 transition hover:bg-red-50"
+                className="flex h-9 w-full items-center justify-between rounded-lg border border-red-200 px-3 font-inter text-base sm:text-base text-red-500 transition hover:bg-red-50"
             >
                 <span className="flex items-center gap-3">
                     <Trash2 size={15} />
                     Delete Expense
                 </span>
 
-                <span className="text-[8px] uppercase">
+                <span className="text-[10px] uppercase">
                     Admin
                 </span>
             </button>

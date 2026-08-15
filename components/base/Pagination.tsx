@@ -28,7 +28,7 @@ export default function Pagination({
     );
 
     return (
-        <div className="flex w-full flex-col gap-4 border-t border-border px-4 py-4 sm:flex-row sm:items-center sm:justify-between sm:px-6">
+        <div className="flex w-full flex-col gap-4 border-t border-border px-4 py-4 sm:flex-row items-center sm:justify-between sm:px-6">
 
             {/* Showing text */}
             <p className="font-inter text-xs text-secondary sm:text-sm">

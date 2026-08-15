@@ -45,13 +45,13 @@ export default function Levelbar({ variant }: LevelbarProps) {
         return (
             <div className="box w-full p-4 sm:p-5 lg:p-6">
 
-                <h2 className="font-iceberg text-base text-black sm:text-xl xl:text-3xl">
+                <h2 className="font-iceberg text-2xl text-black sm:text-xl xl:text-3xl">
                     Who are we spending for?
                 </h2>
 
                 <button
                     type="button"
-                    className="mt-1.5 font-iceberg text-[11px] text-primary hover:opacity-80 sm:mt-2 sm:text-sm xl:text-base"
+                    className="mt-1.5 font-iceberg text-sm text-primary hover:opacity-80 sm:mt-2 sm:text-sm xl:text-base"
                 >
                     View Breakdown
                 </button>
@@ -60,7 +60,7 @@ export default function Levelbar({ variant }: LevelbarProps) {
                     {data.map((item) => (
                         <div key={item.label} className="w-full">
 
-                            <div className="mb-1 flex items-center justify-between gap-2 font-iceberg text-[11px] sm:text-sm xl:text-base">
+                            <div className="mb-1 flex items-center justify-between gap-2 font-iceberg text-sm sm:text-sm xl:text-base">
                                 <span className="min-w-0 truncate">
                                     {item.label}
                                 </span>
@@ -115,7 +115,7 @@ export default function Levelbar({ variant }: LevelbarProps) {
         return (
             <div className="box w-full p-4 sm:p-5 lg:p-6">
 
-                <h2 className="font-iceberg text-base text-black sm:text-2xl mb-10">
+                <h2 className="font-iceberg text-2xl text-black sm:text-3xl mb-10">
                     Spending By Recipient
                 </h2>
 
@@ -124,7 +124,7 @@ export default function Levelbar({ variant }: LevelbarProps) {
                         <div key={item.label} className="w-full">
 
                             {/* Label + Amount */}
-                            <div className="mb-1 flex items-center justify-between gap-2 font-iceberg text-[11px] sm:text-xs">
+                            <div className="mb-1 flex items-center justify-between gap-2 font-iceberg text-base sm:text-lg">
 
                                 <span className="min-w-0 truncate">
                                     {item.label}
@@ -196,13 +196,13 @@ export default function Levelbar({ variant }: LevelbarProps) {
         return (
             <div className="box w-full p-4 sm:p-5 lg:p-6">
 
-                <h2 className="font-iceberg text-base text-black sm:text-xl xl:text-3xl">
+                <h2 className="font-iceberg text-2xl text-black sm:text-xl xl:text-3xl">
                     What are we spending on?
                 </h2>
 
                 <button
                     type="button"
-                    className="mt-1.5 font-iceberg text-[11px] text-primary hover:opacity-80 sm:mt-2 sm:text-sm xl:text-base"
+                    className="mt-1.5 font-iceberg text-sm text-primary hover:opacity-80 sm:mt-2 sm:text-sm xl:text-base"
                 >
                     View All Categories
                 </button>
@@ -214,7 +214,7 @@ export default function Levelbar({ variant }: LevelbarProps) {
                             className="flex w-full items-center gap-2 sm:gap-3"
                         >
 
-                            <span className="w-20 shrink-0 truncate font-iceberg text-[11px] sm:w-[105px] sm:text-sm xl:text-base">
+                            <span className="w-23 sm:w-30 shrink-0 truncate font-iceberg text-xs sm:text-sm xl:text-base">
                                 {item.label}
                             </span>
 
@@ -227,7 +227,7 @@ export default function Levelbar({ variant }: LevelbarProps) {
                                 />
                             </div>
 
-                            <span className="w-14 shrink-0 text-right font-iceberg text-[11px] sm:w-[55px] sm:text-sm xl:text-base">
+                            <span className="w-14 shrink-0 text-right font-iceberg text-sm sm:text-sm xl:text-base">
                                 {item.amount}
                             </span>
 
@@ -243,14 +243,14 @@ export default function Levelbar({ variant }: LevelbarProps) {
 
     if (variant === "budget") {
         return (
-            <div className="box w-full p-4 sm:p-5 lg:p-6">
-                <div className="flex items-center justify-between mb-4">
-                    <h2 className="font-iceberg text-base text-black sm:text-xl">
+            <div className="box w-full p-4 sm:p-5 lg:p-6 space-y-3">
+                <div className="flex items-center justify-between mb-6">
+                    <h2 className="font-iceberg text-xl text-black sm:text-3xl">
                         Monthly Budget Utilization
                     </h2>
                     <Tags color="text-red-800" bg="bg-red-100" words="Over Budget" />
                 </div>
-                <div className="flex flex-col gap-1.5 font-iceberg text-xs sm:flex-row sm:items-center sm:justify-between sm:gap-4 sm:text-sm">
+                <div className="flex  gap-1.5 font-iceberg text-base sm:flex-row items-center justify-between sm:gap-4 sm:text-base">
 
                     <span>
                         Actual Spending: <b>₹12,45,200</b>
@@ -262,7 +262,7 @@ export default function Levelbar({ variant }: LevelbarProps) {
 
                 </div>
 
-                <div className="mt-3 h-2 w-full overflow-hidden rounded-full bg-[#E8ECFA] sm:mt-4 sm:h-2.5">
+                <div className="mt-2 h-2 w-full overflow-hidden rounded-full bg-[#E8ECFA] sm:mt-4 sm:h-2.5">
 
                     <div
                         className="h-full rounded-full bg-red-500"
@@ -273,7 +273,7 @@ export default function Levelbar({ variant }: LevelbarProps) {
 
                 </div>
 
-                <p className="mt-1.5 font-iceberg text-[11px] text-secondary sm:mt-2 sm:text-xs">
+                <p className="mt-2 font-iceberg text-sm text-secondary sm:mt-2 sm:text-base">
                     Exceeded by ₹2,45,200 (24.5% above cap)
                 </p>
 
@@ -310,14 +310,14 @@ export default function Levelbar({ variant }: LevelbarProps) {
         return (
             <div className="box w-full p-4 sm:p-5 lg:p-6  md:space-y-15">
 
-                <h2 className="font-iceberg text-base text-black sm:text-xl">
+                <h2 className="font-iceberg text-2xl text-black sm:text-3xl">
                     Category Breakdown
                 </h2>
 
                 {/* Donut */}
                 <div className="mt-4 flex justify-center sm:mt-5">
 
-                    <div className="relative h-32 w-32 rounded-full bg-[conic-gradient(#1677FF_0_35%,#EF2B2D_35%_55%,#16A34A_55%_70%,#F59E0B_70%_100%)] sm:h-36 sm:w-36 lg:h-50 lg:w-50">
+                    <div className="relative h-40 w-40 md:h-32 md:w-32 rounded-full bg-[conic-gradient(#1677FF_0_35%,#EF2B2D_35%_55%,#16A34A_55%_70%,#F59E0B_70%_100%)] sm:h-36 sm:w-36 lg:h-50 lg:w-50">
 
                         <div className="absolute inset-5 flex flex-col items-center justify-center rounded-full bg-white sm:inset-6 lg:inset-7">
 
@@ -350,13 +350,13 @@ export default function Levelbar({ variant }: LevelbarProps) {
                                     className={`h-2 w-2 shrink-0 rounded-full ${item.color}`}
                                 />
 
-                                <span className="truncate text-sm md:text-xl" >
+                                <span className="truncate text-lg md:text-2xl" >
                                     {item.label}
                                 </span>
 
                             </div>
 
-                            <span className="shrink-0 text-sm md:text-xl">
+                            <span className="shrink-0 text-lg md:text-2xl">
                                 {item.percentage}
                             </span>
 

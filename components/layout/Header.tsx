@@ -12,30 +12,34 @@ const Header = ({
     children,
 }: HeaderProps) => {
     return (
-        <section className="flex w-full flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
-
+        <section className={`flex w-full gap-0 md:gap-4 
+        ${children
+            ?"flex-row items-center justify-between"
+            :""
+        }`}>
             {/* Heading */}
-            <div className="min-w-0 flex-1">
-
-                <h2 className="font-iceberg text-xl font-normal leading-tight text-black sm:text-2xl md:text-[30px]">
+            <div className={`min-w-0
+                ${children
+                    ?"w-[70%] md:full":"w-full"
+                }`}>
+                <h2 className={`font-iceberg text-3xl font-normal leading-tight text-black sm:text-4xl
+               `}>
                     {heading}
                 </h2>
-
                 {description && (
-                    <p className="mt-1 font-iceberg text-xs text-black sm:text-sm md:text-base">
+                    <p className="mt-1 font-iceberg text-sm text-secondary sm:text-sm md:text-base">
                         {description}
                     </p>
                 )}
-
             </div>
-
             {/* Right Content */}
+            <div>
             {children && (
-                <div className="w-full sm:w-fit">
+                <div className=" w-full">
                     {children}
                 </div>
             )}
-
+            </div>
         </section>
     );
 };

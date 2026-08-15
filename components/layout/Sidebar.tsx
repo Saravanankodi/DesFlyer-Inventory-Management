@@ -13,6 +13,7 @@ import {
 } from "lucide-react";
 
 import Button from "../base/Button";
+import { Analysis, Expense } from "../icons";
 
 const menu = [
     {
@@ -28,20 +29,21 @@ const menu = [
     {
         name: "Expense Records",
         href: "/expense-records",
-        icon: FileText,
+        icon: Expense,
+        custom: true,
     },
     {
         name: "Analytics",
         href: "/analytics",
-        icon: ChartNoAxesColumn,
+        icon: Analysis,
+        custom: true,
     },
 ];
-
 export default function Sidebar() {
     const pathname = usePathname();
 
     return (
-        <aside className="sticky top-0 z-50 h-screen w-64 shrink-0 border-r border-[#BCCBB94D] bg-white">
+        <aside className="sticky top-0 z-50 h-screen w-55 shrink-0 border-r border-[#BCCBB94D] bg-white">
             <div className="flex h-screen flex-col items-center justify-between px-4 py-4">
 
               
@@ -61,9 +63,9 @@ export default function Sidebar() {
                     </div>
 
                     {/* Navigation */}
-                    <nav className="mt-6 flex flex-col gap-2">
+                    <nav className="mt-6 flex flex-col gap-2 space-y-4">
 
-                        {menu.map((item) => {
+                        {/* {menu.map((item) => {
                             const Icon = item.icon;
                             const active =
                                 item.href === "/expense-records"
@@ -75,22 +77,57 @@ export default function Sidebar() {
                                 <Link
                                     key={item.name}
                                     href={item.href}
-                                    className={` relative flex h-11 items-center gap-3 rounded-lg px-1 transition
+                                    className={` relative flex h-11 items-center gap-3  px-1 transition
                                         ${active
                                             ? "bg-primary/10 text-primary"
                                             : "text-black hover:bg-gray-50"
                                         }
                                     `}
                                 >
-                                    <Icon size={18} />
+                                    <Icon size={22} />
 
-                                    <span className="font-iceberg text-lg">
+                                    <span className="font-iceberg text-xl">
                                         {item.name}
                                     </span>
 
                                     {active && (
                                         <span
-                                            className=" absolute bottom-0 left-0 h-0.75 w-full rounded-full bg-primary" />
+                                            className=" absolute bottom-0 left-0 h-1 w-full rounded-t-full bg-primary" />
+                                    )}
+                                </Link>
+                            );
+                        })} */}
+                        {menu.map((item) => {
+                            const Icon = item.icon;
+
+                            const active =
+                                item.href === "/expense-records"
+                                    ? pathname === item.href ||
+                                    pathname.startsWith(`${item.href}/`)
+                                    : pathname === item.href;
+
+                            return (
+                                <Link
+                                    key={item.name}
+                                    href={item.href}
+                                    className={`relative flex h-11 items-center gap-3 px-1 transition
+                ${active
+                                            ? "bg-primary/10 text-primary"
+                                            : "text-black hover:bg-gray-50"
+                                        }
+            `}
+                                >
+                                    <Icon
+                                        size={22}
+                                        {...(item.custom ? { active } : {})}
+                                    />
+
+                                    <span className="font-iceberg text-xl">
+                                        {item.name}
+                                    </span>
+
+                                    {active && (
+                                        <span className="absolute bottom-0 left-0 h-1 w-full rounded-t-full bg-primary" />
                                     )}
                                 </Link>
                             );
@@ -118,7 +155,7 @@ export default function Sidebar() {
                     {/* Settings */}
                     <Link
                         href="/settings"
-                        className=" flex items-center gap-3 px-2 py-1.5 font-iceberg text-sm text-black hover:text-primary" >
+                        className=" flex items-center gap-3 px-2 py-1.5 font-iceberg text-lg text-black hover:text-primary" >
                         <Settings size={18} />
                         <span>Settings</span>
                     </Link>
@@ -126,7 +163,7 @@ export default function Sidebar() {
                     {/* Help */}
                     <Link
                         href="/help"
-                        className=" flex items-center gap-3 px-2 py-1.5 font-iceberg text-sm text-black hover:text-primary" >
+                        className=" flex items-center gap-3 px-2 py-1.5 font-iceberg text-lg text-black hover:text-primary" >
                         <CircleHelp size={18} />
                         <span>Help/Support</span>
                     </Link>
@@ -134,7 +171,7 @@ export default function Sidebar() {
                     {/* User */}
                     <div className="mt-3 flex items-center gap-2 px-2">
 
-                        <div className="h-8 w-8 shrink-0 overflow-hidden rounded-full bg-gray-100">
+                        <div className="h-10 w-10 shrink-0 overflow-hidden rounded-full bg-gray-100">
                             <img
                                 src="/user.png"
                                 alt="Admin User"
@@ -143,11 +180,11 @@ export default function Sidebar() {
                         </div>
 
                         <div className="min-w-0">
-                            <p className="font-iceberg text-xs font-medium text-black">
+                            <p className="font-iceberg text-base font-medium text-black">
                                 Admin User
                             </p>
 
-                            <p className="font-iceberg text-[9px] text-secondary">
+                            <p className="font-iceberg text-xs text-secondary">
                                 Finance Dept.
                             </p>
                         </div>

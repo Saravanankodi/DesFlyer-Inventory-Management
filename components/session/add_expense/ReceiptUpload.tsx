@@ -76,26 +76,26 @@ export default function ReceiptUpload({
                 <button
                     type="button"
                     onClick={() => inputRef.current?.click()}
-                    className=" flex min-h-30 w-full flex-col items-center justify-center rounded-lg border border-border bg-white px-4 py-5 text-center transition-all hover:border-primary hover:bg-primary/[0.02]
+                    className=" flex min-h-50 w-full flex-col items-center justify-center rounded-lg border border-border bg-white px-4 py-5 text-center transition-all hover:border-primary hover:bg-primary/[0.02]
                     "
                 >
                     <span
-                        className=" flex h-10 w-10 items-center justify-center rounded-full bg-primary/10 text-primary
+                        className=" flex h-18 w-18 items-center justify-center rounded-full bg-primary/10 text-primary
                         "
                     >
-                        <CloudUpload size={22} />
+                        <CloudUpload size={27} />
                     </span>
 
-                    <span className="mt-2 font-inter text-[10px] font-medium text-black sm:text-sm">
+                    <span className="mt-2 font-inter text-base font-medium text-black sm:text-sm">
                         Upload Bill / Receipt
                     </span>
 
-                    <span className="mt-0.5 font-inter text-[10px] text-secondary">
+                    <span className="mt-0.5 font-inter text-xs text-secondary">
                         PDF, JPG or PNG (Max 5MB)
                     </span>
                 </button>
             ) : (
-                <div className="flex min-h-30 items-center gap-3 rounded-lg border border-primary/30 bg-primary/[0.03] px-3 py-3">
+                <div className="flex min-h-50 items-center gap-3 rounded-lg border border-primary/30 bg-primary/[0.03] px-3 py-3">
 
                     <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary">
                         {file.type === "application/pdf" ? (

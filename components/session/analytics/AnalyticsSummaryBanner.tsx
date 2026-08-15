@@ -16,25 +16,17 @@ export default function AnalyticsSummaryBanner() {
             className=" flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between "  >
                 {/* Left Statistics */}
                 <div
-                    className=" grid grid-cols-2 gap-x-6 gap-y-4 sm:grid-cols-3 sm:gap-x-10 lg:flex lg:items-center lg:gap-12   ">
+                    className=" grid grid-cols-3 gap-x-6 gap-y-4 sm:grid-cols-3 sm:gap-x-10 lg:flex lg:items-center lg:gap-12   ">
                     {/* Last Updated */}
                     <div className="flex items-start gap-2">
-                        <div
-                            className=" flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-primary/10
-                            "
-                        >
-                            <CalendarDays
-                                size={14}
-                                className="text-primary"
-                            />
-                        </div>
+                        
 
                         <div>
-                            <p className="font-inter text-[8px] uppercase tracking-wide text-secondary">
-                                Last Updated
+                            <p className="font-inter text-[9px] sm:text-xs uppercase tracking-wide text-secondary">
+                                PEAK SPENDING DAY                               
                             </p>
 
-                            <p className="mt-0.5 font-iceberg text-xs text-black sm:text-sm">
+                            <p className="mt-0.5 font-iceberg text-lg  text-black sm:text-lg">
                                 October 12th
                             </p>
                         </div>
@@ -42,22 +34,14 @@ export default function AnalyticsSummaryBanner() {
 
                     {/* Data */}
                     <div className="flex items-start gap-2">
-                        <div
-                            className=" flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-primary/10
-                            "
-                        >
-                            <TrendingUp
-                                size={14}
-                                className="text-primary"
-                            />
-                        </div>
+                       
 
                         <div>
-                            <p className="font-inter text-[8px] uppercase tracking-wide text-secondary">
-                                Total Data
+                            <p className="font-inter text-[9px] sm:text-xs uppercase tracking-wide text-secondary">
+                                AVG DAILY BURN
                             </p>
 
-                            <p className="mt-0.5 font-iceberg text-xs text-black sm:text-sm">
+                            <p className="mt-0.5 font-iceberg text-lg  text-black sm:text-lg">
                                 ₹40,167
                             </p>
                         </div>
@@ -65,22 +49,14 @@ export default function AnalyticsSummaryBanner() {
 
                     {/* Average */}
                     <div className="flex items-start gap-2">
-                        <div
-                            className="  flex  h-7  w-7  shrink-0  items-center  justify-center  rounded-lg  bg-primary/10
-                            "
-                        >
-                            <Clock3
-                                size={14}
-                                className="text-primary"
-                            />
-                        </div>
+                        
 
                         <div>
-                            <p className="font-inter text-[8px] uppercase tracking-wide text-secondary">
-                                Average
+                            <p className="font-inter text-[9px] sm:text-xs uppercase tracking-wide text-secondary">
+                                APPROVAL VELOCITY
                             </p>
 
-                            <p className="mt-0.5 font-iceberg text-xs text-black sm:text-sm">
+                            <p className="mt-0.5 font-iceberg text-lg  text-black sm:text-lg">
                                 4.2 Hours
                             </p>
                         </div>
@@ -89,30 +65,20 @@ export default function AnalyticsSummaryBanner() {
 
                 {/* Right Status */}
                 <div
-                    className=" flex items-center justify-between gap-4 border-t border-border pt-3 sm:justify-end lg:border-t-0 lg:pt-0   "
+                    className=" flex items-center justify-center gap-4 border-t border-border pt-3 sm:justify-end lg:border-t-0 lg:pt-0   "
                 >
-                    <div className="text-right">
-                        <p className="font-inter text-[9px] text-secondary">
-                            Data Sync Status
+                    <div className="text-center">
+                        <p className="font-inter text-xs md:text-sm text-secondary">
+                            Data sync: 2 mins ago                           
                         </p>
 
                         <div className="mt-1 flex items-center justify-end gap-1">
                             <span className="h-1.5 w-1.5 rounded-full bg-green-500" />
 
-                            <span className="font-inter text-[9px] text-green-600">
-                                Last Sync Processing
+                            <span className="font-inter text-xs md:text-sm text-green-600">
+                                Live System Monitoring
                             </span>
                         </div>
-                    </div>
-
-                    <div
-                        className=" flex h-8 w-8 items-center justify-center rounded-full bg-green-50
-                        "
-                    >
-                        <Users
-                            size={14}
-                            className="text-green-600"
-                        />
                     </div>
                 </div>
             </div>

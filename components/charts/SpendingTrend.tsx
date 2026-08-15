@@ -23,7 +23,6 @@ const weeklyData: SpendingData[] = [
     { label: "Week 2", amount: 18000, previous: 16000 },
     { label: "Week 3", amount: 25000, previous: 22000 },
     { label: "Week 4", amount: 29500, previous: 27000 },
-
 ];
 
 const dailyData: SpendingData[] = [
@@ -34,7 +33,6 @@ const dailyData: SpendingData[] = [
     { label: "Fri", amount: 5800, previous: 5200 },
     { label: "Sat", amount: 8200, previous: 7100 },
     { label: "Sun", amount: 6900, previous: 6200 },
-
 ];
 
 export default function SpendingTrend() {
@@ -55,11 +53,11 @@ export default function SpendingTrend() {
             <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
 
                 <div>
-                    <h2 className="font-iceberg text-lg leading-tight text-black sm:text-xl xl:text-3xl">
+                    <h2 className="font-iceberg text-2xl leading-tight text-black sm:text-2xl xl:text-3xl">
                         Spending Trend
                     </h2>
 
-                    <p className="mt-2 font-iceberg text-[10px] text-black sm:text-xs xl:text-sm">
+                    <p className="mt-2 font-iceberg text-sm text-black sm:text-xs xl:text-sm">
                         Weekly expenditure overview
                     </p>
                 </div>
@@ -88,7 +86,7 @@ export default function SpendingTrend() {
                         margin={{
                             top: 20,
                             right: 25,
-                            left: 25,
+                            left: 30,
                             bottom: 5,
                         }}
                     >
@@ -182,11 +180,11 @@ export default function SpendingTrend() {
 
                 <div className="flex flex-col items-center">
 
-                    <span className="rounded-md bg-primary px-2 py-1 font-inter text-[10px] font-medium text-white sm:text-xs xl:text-base">
+                    <span className="rounded-md bg-primary px-2 py-1 font-inter text-sm font-medium text-white sm:text-xs xl:text-base">
                         HIGHEST
                     </span>
 
-                    <span className="mt-1 font-iceberg text-[10px] text-primary sm:text-xs xl:text-base">
+                    <span className="mt-1 font-iceberg text-sm text-primary sm:text-xs xl:text-base">
                         ₹{highest.toLocaleString("en-IN")}
                     </span>
 

@@ -117,7 +117,7 @@ export default function Table({ variant }: TableProps) {
                         Recent Expenses
                     </h2>
 
-                    <button className="font-iceberg text-[10px] text-primary sm:text-sm">
+                    <button className="font-iceberg text-sm text-primary sm:text-sm">
                         View All
                     </button>
 
@@ -131,31 +131,31 @@ export default function Table({ variant }: TableProps) {
                         <thead>
                             <tr className="bg-[#F7F8FC]">
 
-                                <th className="px-4 py-3 text-left font-iceberg text-[10px] md:text-xs font-medium text-secondary">
+                                <th className="px-4 py-3 text-left font-iceberg text-sm md:text-xs xl:text-lg font-medium text-secondary">
                                     DATE
                                 </th>
 
-                                <th className="px-4 py-3 text-left font-iceberg text-[10px] md:text-xs font-medium text-secondary">
+                                <th className="px-4 py-3 text-left font-iceberg text-sm md:text-xs xl:text-lg font-medium text-secondary">
                                     PAID FOR
                                 </th>
 
-                                <th className="px-4 py-3 text-left font-iceberg text-[10px] md:text-xs font-medium text-secondary">
+                                <th className="px-4 py-3 text-left font-iceberg text-sm md:text-xs xl:text-lg font-medium text-secondary">
                                     TYPE
                                 </th>
 
-                                <th className="px-4 py-3 text-left font-iceberg text-[10px] md:text-xs font-medium text-secondary">
+                                <th className="px-4 py-3 text-left font-iceberg text-sm md:text-xs xl:text-lg font-medium text-secondary">
                                     PURPOSE
                                 </th>
 
-                                <th className="px-4 py-3 text-left font-iceberg text-[10px] md:text-xs font-medium text-secondary">
+                                <th className="px-4 py-3 text-left font-iceberg text-sm md:text-xs xl:text-lg font-medium text-secondary">
                                     BILL
                                 </th>
 
-                                <th className="px-4 py-3 text-left font-iceberg text-[10px] md:text-xs font-medium text-secondary">
+                                <th className="px-4 py-3 text-left font-iceberg text-sm md:text-xs xl:text-lg font-medium text-secondary">
                                     STATUS
                                 </th>
 
-                                <th className="px-4 py-3 text-left font-iceberg text-[10px] md:text-xs font-medium text-secondary">
+                                <th className="px-4 py-3 text-left font-iceberg text-sm md:text-xs xl:text-lg font-medium text-secondary">
                                     AMOUNT
                                 </th>
 
@@ -170,21 +170,21 @@ export default function Table({ variant }: TableProps) {
                                     className="border-t border-border"
                                 >
 
-                                    <td className="px-4 py-3 font-iceberg text-xs text-black">
+                                    <td className="px-4 py-3 font-iceberg text-xs md:text-base text-black">
                                         {item.date}
                                     </td>
 
-                                    <td className="px-4 py-3 font-iceberg text-sm text-black">
+                                    <td className="px-4 py-3 font-iceberg text-sm md:text-base text-black">
                                         {item.paidFor}
                                     </td>
 
                                     <td className="px-4 py-3">
-                                        <span className="rounded-full bg-primary/10 px-2 py-1 font-iceberg text-xs text-primary">
+                                        <span className="rounded-full bg-primary/10 px-2 py-1 font-iceberg text-xs md:text-base text-primary">
                                             {item.type}
                                         </span>
                                     </td>
 
-                                    <td className="px-4 py-3 font-iceberg text-sm text-black">
+                                    <td className="px-4 py-3 font-iceberg text-sm md:text-base text-black">
                                         {item.purpose}
                                     </td>
 
@@ -204,7 +204,7 @@ export default function Table({ variant }: TableProps) {
 
                                     <td className="px-4 py-3">
                                         <span
-                                            className={`font-iceberg text-sm ${item.status === "Verified"
+                                            className={`font-iceberg text-sm md:text-base ${item.status === "Verified"
                                                     ? "text-green-500"
                                                     : "text-orange-400"
                                                 }`}
@@ -213,7 +213,7 @@ export default function Table({ variant }: TableProps) {
                                         </span>
                                     </td>
 
-                                    <td className="px-4 py-3 font-iceberg text-base font-medium text-black">
+                                    <td className="px-4 py-3 font-iceberg text-base md:text-lg font-medium text-black">
                                         {item.amount}
                                     </td>
 
@@ -240,29 +240,29 @@ export default function Table({ variant }: TableProps) {
                     <table className="w-full min-w-[700px]">
 
                         <thead>
-                            <tr className="bg-[#F0F2FF]">
+                            <tr className="bg-[#F0F2FF] grid-cols-6">
 
-                                <th className="px-6 py-3 text-left font-inter text-[10px] md:text-xs font-medium text-secondary">
+                                <th className="px-2 py-3 text-left font-iceberg text-sm md:text-xs xl:text-lg font-medium text-secondary">
                                     DATE
                                 </th>
 
-                                <th className="px-6 py-3 text-left font-inter text-[10px] md:text-xs font-medium text-secondary">
+                                <th className="px-2 py-3 text-left font-iceberg text-sm md:text-xs xl:text-lg font-medium text-secondary">
                                     PAID FOR
                                 </th>
 
-                                <th className="px-6 py-3 text-left font-inter text-[10px] md:text-xs font-medium text-secondary">
+                                <th className="px-2 py-3 text-left font-iceberg text-sm md:text-xs xl:text-lg font-medium text-secondary">
                                     PURPOSE
                                 </th>
 
-                                <th className="px-6 py-3 text-left font-inter text-[10px] md:text-xs font-medium text-secondary">
+                                <th className="px-2 py-3 text-left font-iceberg text-sm md:text-xs xl:text-lg font-medium text-secondary">
                                     AMOUNT
                                 </th>
 
-                                <th className="px-6 py-3 text-left font-inter text-[10px] md:text-xs font-medium text-secondary">
+                                <th className="px-2 py-3 text-left font-iceberg text-sm md:text-xs xl:text-lg font-medium text-secondary">
                                     RECEIPT
                                 </th>
 
-                                <th className="px-6 py-3 text-left font-inter text-[10px] md:text-xs font-medium text-secondary">
+                                <th className="px-2 py-3 text-left font-iceberg text-sm md:text-xs xl:text-lg font-medium text-secondary">
                                     ACTION
                                 </th>
 
@@ -274,42 +274,42 @@ export default function Table({ variant }: TableProps) {
                             {expenseData.map((item, index) => (
                                 <tr
                                     key={index}
-                                    className="border-b border-border"
+                                    className="border-b border-border grid-cols-6"
                                 >
 
-                                    <td className="px-6 py-5 font-iceberg text-sm text-black">
+                                    <td className="px-2 py-3 font-iceberg text-sm md:text-base text-black">
                                         {item.date}
                                     </td>
 
-                                    <td className="px-6 py-5">
+                                    <td className="px-2 py-3">
 
-                                        <p className="font-inter text-sm font-semibold text-black">
+                                        <p className="font-iceberg text-base md:text-base font-semibold text-black">
                                             {item.paidFor}
                                         </p>
 
-                                        <p className="mt-1 font-inter text-xs text-secondary">
+                                        <p className="mt-1 font-iceberg text-sm md:text-base text-secondary">
                                             {item.type}
                                         </p>
 
                                     </td>
 
-                                    <td className="px-6 py-5 font-inter text-sm text-secondary">
+                                    <td className="px-2 py-3 font-iceberg text-sm md:text-base text-secondary">
                                         {item.purpose}
                                     </td>
 
-                                    <td className="px-6 py-5 font-inter text-sm font-semibold text-black">
+                                    <td className="px-2 py-3 font-iceberg text-sm md:text-base font-semibold text-black">
                                         {item.amount}
                                     </td>
 
-                                    <td className="px-6 py-5">
+                                    <td className="px-2 py-3">
 
                                         {item.receipt ? (
-                                            <span className="flex items-center gap-1 font-inter text-[10px] md:text-sm text-primary">
+                                            <span className="flex items-center gap-1 font-iceberg text-sm md:text-base  text-primary">
                                                 <Paperclip size={11} />
                                                 Attached
                                             </span>
                                         ) : (
-                                            <span className="flex items-center gap-1 font-inter text-[10px] md:text-sm text-gray-400">
+                                            <span className="flex items-center gap-1 font-iceberg text-sm md:text-base  text-gray-400">
                                                 <Link2Off size={11} />
                                                 Not Added
                                             </span>
@@ -317,7 +317,7 @@ export default function Table({ variant }: TableProps) {
 
                                     </td>
 
-                                    <td className="px-6 py-5">
+                                    <td className="px-2 py-3">
 
                                         <div className="flex items-center gap-3">
 
@@ -353,11 +353,11 @@ export default function Table({ variant }: TableProps) {
             {/* Header */}
             <div className="flex items-center justify-between px-4 py-4 sm:px-6">
 
-                <h2 className="font-iceberg text-base text-black sm:text-lg">
+                <h2 className="font-iceberg text-2xl text-black sm:text-3xl">
                     Top 10 Highest Expenses
                 </h2>
 
-                <button className="font-iceberg text-[10px] text-primary sm:text-xs">
+                <button className="font-iceberg text-base text-primary sm:text-lg">
                     View All
                 </button>
 
@@ -373,27 +373,27 @@ export default function Table({ variant }: TableProps) {
 
                         <tr className="bg-[#F0F2FF]">
 
-                            <th className="px-4 py-3 text-left font-iceberg text-[10px] md:text-sm font-medium text-secondary">
+                            <th className="px-4 py-3 text-left font-iceberg text-base md:text-base font-medium text-secondary">
                                 Rank
                             </th>
 
-                            <th className="px-4 py-3 text-left font-iceberg text-[10px] md:text-sm font-medium text-secondary">
+                            <th className="px-4 py-3 text-left font-iceberg text-base md:text-base font-medium text-secondary">
                                 Expense Name
                             </th>
 
-                            <th className="px-4 py-3 text-left font-iceberg text-[10px] md:text-sm font-medium text-secondary">
+                            <th className="px-4 py-3 text-left font-iceberg text-base md:text-base font-medium text-secondary">
                                 Category
                             </th>
 
-                            <th className="px-4 py-3 text-left font-iceberg text-[10px] md:text-sm font-medium text-secondary">
+                            <th className="px-4 py-3 text-left font-iceberg text-base md:text-base font-medium text-secondary">
                                 Amount
                             </th>
 
-                            <th className="px-4 py-3 text-left font-iceberg text-[10px] md:text-sm font-medium text-secondary">
+                            <th className="px-4 py-3 text-left font-iceberg text-base md:text-base font-medium text-secondary">
                                 Date
                             </th>
 
-                            <th className="px-4 py-3 text-left font-iceberg text-[10px] md:text-sm font-medium text-secondary">
+                            <th className="px-4 py-3 text-left font-iceberg text-base md:text-base font-medium text-secondary">
                                 Action
                             </th>
 
@@ -410,18 +410,18 @@ export default function Table({ variant }: TableProps) {
                                 className="border-t border-border"
                             >
 
-                                <td className="px-4 py-4 font-iceberg text-xs md:text-sm text-black">
+                                <td className="px-4 py-4 font-iceberg text-sm md:text-base text-black">
                                     {item.rank}
                                 </td>
 
-                                <td className="max-w-[180px] px-4 py-4 font-iceberg text-xs md:text-sm text-black">
+                                <td className="max-w-[180px] px-4 py-4 font-iceberg text-sm md:text-base text-black">
                                     {item.name}
                                 </td>
 
                                 <td className="px-4 py-4">
 
                                     <span
-                                        className={`rounded-full px-2.5 py-1 font-iceberg text-[9px] md:text-xs ${item.category === "Hardware"
+                                        className={`rounded-full px-2.5 py-1 font-iceberg text-sm md:text-xs ${item.category === "Hardware"
                                                 ? "bg-primary/10 text-primary"
                                                 : item.category === "Travel"
                                                     ? "bg-red-100 text-red-500"
@@ -437,11 +437,11 @@ export default function Table({ variant }: TableProps) {
 
                                 </td>
 
-                                <td className="px-4 py-4 font-iceberg text-xs md:text-sm font-medium text-black">
+                                <td className="px-4 py-4 font-iceberg text-sm md:text-base font-medium text-black">
                                     {item.amount}
                                 </td>
 
-                                <td className="px-4 py-4 font-iceberg text-xs md:text-sm text-black">
+                                <td className="px-4 py-4 font-iceberg text-sm md:text-base text-black">
                                     {item.date}
                                 </td>
 

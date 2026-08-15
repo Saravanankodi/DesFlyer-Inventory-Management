@@ -20,7 +20,7 @@ export default function ExpenseForm({
             {/* Header */}
             <div className="mb-5 flex items-center justify-between gap-3">
 
-                <h2 className="font-iceberg text-lg text-black sm:text-xl">
+                <h2 className="font-iceberg text-2xl text-black sm:text-2xl xl:text-3xl">
                     Expense Details
                 </h2>
 
@@ -28,7 +28,7 @@ export default function ExpenseForm({
 
             </div>
 
-            <div className="space-y-4">
+            <div className="space-y-7 lg:space-y-8">
 
                 {/* Amount */}
                 <Input
@@ -36,12 +36,12 @@ export default function ExpenseForm({
                     type="number"
                     placeholder="1200"
                     icon={<IndianRupee size={20} strokeWidth={4} />}
-                    className=" h-10 rounded-lg text-sm lg:text-2xl sm:h-11 font-inter font-bold"  />
+                    className=" h-10 rounded-lg text-xl lg:text-3xl xl:texxt-5xl sm:h-11 font-inter font-bold"  />
 
                 {/* Category */}
                 <div>
 
-                    <p className="mb-1.5 block font-inter text-xs text-secondary">
+                    <p className="mb-1.5 md:mb-2 xl:mb-4 block font-inter text-sm md:text-sm xl:text-base text-secondary">
                         Who is this expense for?
                     </p>
 
@@ -57,23 +57,23 @@ export default function ExpenseForm({
                     label="Enter Name / Description"
                     type="text"
                     placeholder="e.g. Project 'Z' lunch"
-                    className=" h-10 rounded-lg text-xs sm:h-11
+                    className=" h-10 rounded-lg text-sm md:text-sm xl:text-base sm:h-11
                     " />
 
                 {/* Expense Purpose + Date */}
-                <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
+                <div className="grid grid-cols-1 gap-y-7 md:gap-3 sm:grid-cols-2">
 
                     <Input
                         label="What was this expense for?"
                         type="text"
                         placeholder="Petrol / Travel"
-                        className=" h-10 rounded-lg text-xs sm:h-11" />
+                        className=" h-10 rounded-lg text-sm md:text-sm xl:text-base sm:h-11" />
 
                     <Input
                         label="Expense Date"
                         type="date"
                         defaultValue="2026-07-28"
-                        className=" h-10 rounded-lg text-xs sm:h-11
+                        className=" h-10 rounded-lg text-sm md:text-sm xl:text-base sm:h-11
                         "
                     />
 
@@ -87,13 +87,13 @@ export default function ExpenseForm({
                 />
 
                 {/* Paid For + Department */}
-                <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
+                <div className="grid grid-cols-1 gap-y-7 md:gap-3 sm:grid-cols-2">
 
                     <Input
                         label="Paid For"
                         type="text"
                         placeholder="ABC Technologies"
-                        className=" h-10 rounded-lg text-xs sm:h-11
+                        className=" h-10 rounded-lg text-sm md:text-sm xl:text-base sm:h-11
                         "
                     />
 
@@ -101,7 +101,7 @@ export default function ExpenseForm({
                         label="Department"
                         type="text"
                         placeholder="Development"
-                        className=" h-10 rounded-lg text-xs sm:h-11
+                        className=" h-10 rounded-lg text-sm md:text-sm xl:text-base sm:h-11
                         "
                     />
 
@@ -110,7 +110,7 @@ export default function ExpenseForm({
                 {/* Payment Method */}
                 <div>
 
-                    <label className="mb-1.5 block font-inter text-xs text-secondary">
+                    <label className="mb-1.5 md:mb-2 xl:mb-4 block font-inter text-sm md:text-sm xl:text-base text-secondary">
                         Payment Method
                     </label>
 
