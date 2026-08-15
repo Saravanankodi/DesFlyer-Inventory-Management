@@ -49,10 +49,10 @@ export default function MobileNav() {
                         key={item.name}
                         href={item.href}
                         aria-label={item.name}
-                        className={`flex h-14 w-14 items-center justify-center rounded-2xl transition-colors duration-200 ${active
-                                ? "text-primary"
-                                : "text-black"
-                            }`}
+                        className={`flex h-14 w-14 items-center justify-center rounded-2xl transition-colors duration-200  ${active
+                            ? "text-primary"
+                            : "text-black hover:bg-gray-50"
+                                        }`}
                     >
                         <Icon className="w-6 h-6"/>
                     </Link>

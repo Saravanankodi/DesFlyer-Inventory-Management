@@ -65,38 +65,7 @@ export default function Sidebar() {
                     {/* Navigation */}
                     <nav className="mt-6 flex flex-col gap-2 space-y-4">
 
-                        {/* {menu.map((item) => {
-                            const Icon = item.icon;
-                            const active =
-                                item.href === "/expense-records"
-                                    ? pathname === item.href ||
-                                    pathname.startsWith(`${item.href}/`)
-                                    : pathname === item.href;
-
-                            return (
-                                <Link
-                                    key={item.name}
-                                    href={item.href}
-                                    className={` relative flex h-11 items-center gap-3  px-1 transition
-                                        ${active
-                                            ? "bg-primary/10 text-primary"
-                                            : "text-black hover:bg-gray-50"
-                                        }
-                                    `}
-                                >
-                                    <Icon size={22} />
-
-                                    <span className="font-iceberg text-xl">
-                                        {item.name}
-                                    </span>
-
-                                    {active && (
-                                        <span
-                                            className=" absolute bottom-0 left-0 h-1 w-full rounded-t-full bg-primary" />
-                                    )}
-                                </Link>
-                            );
-                        })} */}
+                         
                         {menu.map((item) => {
                             const Icon = item.icon;
 
