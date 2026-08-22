@@ -34,20 +34,20 @@ const documents: Document[] = [
 
 export default function SupportingDocuments() {
     return (
-        <section className="w-full rounded-[20px] border border-border bg-white p-5 shadow-sm sm:p-6 lg:p-7">
+        <section className="w-full box p-5 shadow-sm sm:p-6 lg:p-7">
 
             {/* Header */}
             <div className="flex items-center justify-between gap-4">
 
-                <h2 className="font-iceberg text-2xl text-black sm:text-xl">
+                <h2 className="font-iceberg text-xl sm:text-2xl text-black md:text-xl">
                     Supporting Documents
                 </h2>
 
                 <button
                     type="button"
-                    className="flex shrink-0 items-center gap-1 font-inter text-xs text-primary transition hover:underline sm:text-base"
+                    className="flex shrink-0 items-center gap-1 font-inter font-bold text-xs text-primary transition hover:underline sm:text-base"
                 >
-                    <Plus size={12} />
+                    <Plus size={12} strokeWidth={3}/>
                     Add File
                 </button>
 
@@ -75,10 +75,10 @@ interface DocumentCardProps {
 
 function DocumentCard({ document }: DocumentCardProps) {
     return (
-        <div className="rounded-xl border border-border bg-white p-3">
+        <div className="box p-3">
 
             {/* Preview */}
-            <div className="flex h-[120px] items-center justify-center overflow-hidden rounded-lg bg-[#F7F9FC] sm:h-[135px]">
+            <div className="flex h-30 items-center justify-center overflow-hidden rounded-lg bg-[#F7F9FC] sm:h-33.75">
 
                 {document.image ? (
                     <img

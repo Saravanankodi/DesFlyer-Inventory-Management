@@ -11,11 +11,11 @@ import { useRouter } from "next/navigation";
 export default function ExpenseDetailPage() {
     const router = useRouter();
     return (
-        <main className="px-6 py-5 sm:px-5 sm:py-5 md:px-6 md:py-6 lg:px-8 lg:py-7 xl:px-10  w-full  psm:space-y-8">
+        <main className="px-3 py-5 sm:px-5 sm:py-5 md:px-6 md:py-6 lg:px-8 lg:py-7 xl:px-10  w-full  psm:space-y-8">
             <div className="w-full flex md:mb-4  gap-4 sm:gap-10">
                 <button className="hidden sm:block" onClick={router.back}><ArrowLeft /></button>
                 <Header heading="Transaction Details" description="Complete expense information and supporting documents. "/>
-                <Button variant="secondary" className="min-w-40 h-fit  hidden md:flex sm:w-fit"><Edit3 size={18} />
+                <Button variant="primary" className="min-w-40 h-fit  hidden md:flex sm:w-fit"><Edit3 size={18} />
                     Edit Expense </Button> 
             </div>
             <Button variant="primary" className="w-full my-4 md:hidden ">

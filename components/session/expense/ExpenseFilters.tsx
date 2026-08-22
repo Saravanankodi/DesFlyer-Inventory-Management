@@ -44,12 +44,12 @@ export default function ExpenseFilters({
 
 
 
-            <div className="grid grid-cols-2 md:grid-cols-[1fr_1fr_1fr_1fr_0.5fr] items-center gap-2 px-3  sm:gap-2.5 sm:px-4 lg:px-0 ">
+            <div className="grid grid-cols-2 md:grid-cols-[1fr_1fr_1fr_1fr_0.5fr] items-center gap-2   sm:gap-2.5 sm:px-4 lg:px-0 ">
 
                 {/* Paid For */}
                 <button
                     type="button"
-                    className=" flex h-9 min-w-[118px] items-center justify-between gap-2 rounded-lg border border-border g-white px-3 font-inter text-xs text-black transition hover:border-primary                    "
+                    className=" flex h-9 min-w-29.5 items-center justify-between gap-2 box px-3 font-inter text-xs text-black transition hover:border-primary                    "
                 >
                     <span>
                         Paid For:{" "}
@@ -67,7 +67,7 @@ export default function ExpenseFilters({
                 {/* Purpose */}
                 <button
                     type="button"
-                    className=" flex h-9 min-w-[118px] items-center justify-between gap-2 rounded-lg border border-border g-white px-3 font-inter text-xs text-black transition hover:border-primary                    "
+                    className=" flex h-9 min-w-29.5 items-center justify-between gap-2 box px-3 font-inter text-xs text-black transition hover:border-primary                    "
                 >
                     <span> Purpose:{" "}
                         <span className="font-medium">
@@ -83,7 +83,7 @@ export default function ExpenseFilters({
 
                 {/* Date Range */}
                 <div
-                    className=" flex h-9 min-w-[155px] flex-1 items-center rounded-lg border border-border bg-white px-2.5 sm:flex-none   "
+                    className=" flex h-9 min-w-38.75 flex-1 items-center box px-2.5 sm:flex-none   "
                 >
                     <CalendarDays
                         size={15}
@@ -119,7 +119,7 @@ export default function ExpenseFilters({
 
                 {/* Amount Range */}
                 <div
-                    className="hidden sm:flex h-9 min-w-[155px] flex-1 items-center rounded-lg border border-border bg-white px-2.5 sm:flex-none                    "
+                    className="hidden sm:flex h-9 min-w-38.75 flex-1 items-center box px-2.5 sm:flex-none                    "
                 >
                     <span className="mr-2 text-xs text-secondary">
                         ₹
@@ -221,7 +221,7 @@ export default function ExpenseFilters({
                 >
                     {/* Amount Range */}
                     <div
-                        className="md:hidden flex h-9 min-w-[155px] flex-1 items-center rounded-lg border border-border bg-white px-2.5 sm:flex-none                    "
+                        className="md:hidden flex h-9 min-w-38.75 flex-1 items-center box px-2.5 sm:flex-none                    "
                     >
                         <span className="mr-2 text-xs text-secondary">
                             ₹
@@ -277,7 +277,7 @@ export default function ExpenseFilters({
 
 
             <div
-                className=" flex min-h-[48px] items-center  justify-between gap-3  px-3 py-2 sm:flex-row sm:items-center sm:justify-between sm:px-4 lg:px-0  "
+                className=" flex min-h-12 items-center  justify-between gap-3  py-2 sm:flex-row sm:items-center sm:justify-between sm:px-4 lg:px-0  "
             >
 
                 {/* Summary */}
@@ -367,7 +367,7 @@ function FilterSelect({
     return (
         <button
             type="button"
-            className=" flex h-9 items-center justify-between rounded-lg border border-border bg-white px-3 font-inter text-xs hover:border-primary            "
+            className=" flex h-9 items-center justify-between box px-3 font-inter text-xs hover:border-primary            "
         >
             <span>               
                 {value}

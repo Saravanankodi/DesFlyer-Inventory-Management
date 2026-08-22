@@ -47,17 +47,17 @@ export default function SpendingTrend() {
 
 
     return (
-        <section className="w-full rounded-[20px] border border-border bg-white p-4 sm:p-5 md:p-6">
+        <section className="w-full box bg-white p-4 sm:p-5 md:p-6">
 
             {/* Header */}
             <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
 
                 <div>
-                    <h2 className="font-iceberg text-2xl leading-tight text-black sm:text-2xl xl:text-3xl">
+                    <h2 className="font-iceberg text-xl leading-tight text-black sm:text-2xl xl:text-3xl">
                         Spending Trend
                     </h2>
 
-                    <p className="mt-2 font-iceberg text-sm text-black sm:text-xs xl:text-sm">
+                    <p className="mt-2 font-iceberg text-xs sm:text-sm text-black md:text-xs xl:text-sm">
                         Weekly expenditure overview
                     </p>
                 </div>
@@ -126,7 +126,7 @@ export default function SpendingTrend() {
                                     .payload as SpendingData;
 
                                 return (
-                                    <div className="rounded-lg border border-border bg-white px-3 py-2 shadow-md">
+                                    <div className="box px-3 py-2 shadow-md">
                                         <p className="font-inter text-[10px] xl:text-base text-secondary">
                                             {item.label}
                                         </p>

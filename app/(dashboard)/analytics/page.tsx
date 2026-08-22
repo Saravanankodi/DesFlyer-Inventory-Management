@@ -20,7 +20,7 @@ import StatsCard from "@/components/cards/StatsCard";
 
 export default function AnalyticsPage() {
     return (
-        <main className="px-6 py-5 sm:px-5 sm:py-5 md:px-6 md:py-6 lg:px-8 lg:py-7 xl:px-10  min-h-screen w-full ">
+        <main className="px-3 py-5 sm:px-5 sm:py-5 md:px-6 md:py-6 lg:px-8 lg:py-7 xl:px-10  min-h-screen w-full ">
             <div
                 className=" w-full max-w-[1600px]  "
             >

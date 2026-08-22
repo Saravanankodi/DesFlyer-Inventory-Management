@@ -15,12 +15,12 @@ export default function ExpenseForm({
     onCategoryChange,
 }: ExpenseFormProps) {
     return (
-        <section className="w-full rounded-[18px] border border-border bg-white p-4 sm:p-5 lg:p-6">
+        <section className="w-full box p-4 sm:p-5 lg:p-6">
 
             {/* Header */}
             <div className="mb-5 flex items-center justify-between gap-3">
 
-                <h2 className="font-iceberg text-2xl text-black sm:text-2xl xl:text-3xl">
+                <h2 className="font-iceberg text-xl sm:text-2xl text-black  xl:text-3xl">
                     Expense Details
                 </h2>
 
@@ -118,7 +118,7 @@ export default function ExpenseForm({
 
                         <select
                             defaultValue="Bank Transfer"
-                            className=" h-10 w-full appearance-none rounded-lg border border-border bg-white px-3 pr-9 font-inter text-xs text-black outline-none transition focus:border-primary sm:h-11
+                            className=" h-10 w-full appearance-none box px-3 pr-9 font-inter text-xs text-black outline-none transition focus:border-primary sm:h-11
                             "
                         >
                             <option value="Bank Transfer">

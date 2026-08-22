@@ -74,7 +74,7 @@ export default function SpendingSection({
 
     if (variant === "departmental") {
         return (
-            <section className="w-full rounded-[20px] border border-border bg-white p-5 sm:p-6 lg:p-7">
+            <section className="w-full box p-5 sm:p-6 lg:p-7">
 
                 <h2 className="font-iceberg text-xl text-black sm:text-2xl">
                     Departmental Share
@@ -114,11 +114,11 @@ export default function SpendingSection({
 
 
     return (
-        <section className="w-full rounded-[20px] border border-border bg-white p-5 sm:p-6 lg:p-7">
+        <section className="w-full box p-5 sm:p-6 lg:p-7">
 
             {/* Header */}
             <div className="mb-4 flex items-center justify-between gap-3">
-                <h2 className="font-iceberg text-2xl text-black sm:text-2xl xl:text-3xl">
+                <h2 className="font-iceberg text-xl text-black sm:text-2xl xl:text-3xl">
                     Highest Spending
                 </h2>
 
@@ -161,7 +161,7 @@ export default function SpendingSection({
 
                             {/* Details */}
                             <div className="min-w-0 flex-1">
-                                <p className="truncate font-iceberg text-lg text-black sm:text-base xl:text-lg">
+                                <p className="truncate font-iceberg text-base sm:text-lg text-black md:text-base xl:text-lg">
                                     {item.name}
                                 </p>
 

@@ -38,14 +38,14 @@ const Dropdown = ({
       <button
         type="button"
         onClick={() => setOpen(!open)}
-        className=" w-full h-11 px-4 text-left rounded-[20px] border border-border bg-white text-black placeholder:text-secondary focus:border-primary transition "
+        className=" w-full h-11 px-4 text-left box  bg-white text-black placeholder:text-secondary focus:border-primary transition "
       >
         {selectedOption ? selectedOption.label : "Select"}
       </button>
 
       {open && (
         <ul
-          className=" absolute z-10 mt-2 w-full rounded-[20px] border border-border bg-white shadow-md "
+          className=" absolute z-10 mt-2 w-full box bg-white shadow-md "
         >
           {option.map((item) => (
             <li

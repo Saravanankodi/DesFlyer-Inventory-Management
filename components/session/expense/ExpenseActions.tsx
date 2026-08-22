@@ -12,7 +12,7 @@ import Button from "@/components/base/Button";
 
 export default function ExpenseActions() {
     return (
-        <section className="w-full rounded-[20px] border border-border bg-white p-5 shadow-sm sm:p-6 lg:p-7">
+        <section className="w-full box p-5 shadow-sm sm:p-6 lg:p-7">
 
             <p className="font-inter text-sm uppercase tracking-[0.18em] text-black">
                 Actions
@@ -23,7 +23,7 @@ export default function ExpenseActions() {
                 {/* Edit */}
                 <button                    
                     type="button"
-                    className="flex h-9 w-full items-center gap-3 rounded-lg border border-border bg-white px-3 font-inter text-base sm:text-base text-black transition hover:bg-btn-blue hover:text-white"
+                    className="flex h-9 w-full items-center gap-3 box px-3 font-inter text-base sm:text-base text-black transition hover:bg-btn-blue hover:text-white"
                 >
                     <Edit3 size={15} />
                     Edit Expense
@@ -32,7 +32,7 @@ export default function ExpenseActions() {
                 {/* Download */}
                 <button
                     type="button"
-                    className="flex h-9 w-full items-center gap-3 rounded-lg border border-border bg-white px-3 font-inter text-base sm:text-base text-black transition hover:bg-btn-blue hover:text-white"
+                    className="flex h-9 w-full items-center gap-3 box px-3 font-inter text-base sm:text-base text-black transition hover:bg-btn-blue hover:text-white"
                 >
                     <Download size={15} />
                     Download PDF
@@ -41,7 +41,7 @@ export default function ExpenseActions() {
                 {/* Print */}
                 <button
                     type="button"
-                    className="flex h-9 w-full items-center gap-3 rounded-lg border border-border bg-white px-3 font-inter text-base sm:text-base text-black transition hover:bg-btn-blue hover:text-white"
+                    className="flex h-9 w-full items-center gap-3 box px-3 font-inter text-base sm:text-base text-black transition hover:bg-btn-blue hover:text-white"
                 >
                     <Printer size={15} />
                     Print
@@ -50,7 +50,7 @@ export default function ExpenseActions() {
                 {/* Mark Reviewed */}
                 <button
                     type="button"
-                    className="flex h-9 w-full items-center gap-3 rounded-lg border border-border bg-white px-3 font-inter text-base sm:text-base text-[#16A34A] transition hover:border-[#16A34A] hover:bg-[#16A34A]/10 "
+                    className="flex h-9 w-full items-center gap-3 box px-3 font-inter text-base sm:text-base text-[#16A34A] transition hover:border-[#16A34A] hover:bg-[#16A34A]/10 "
                 >
                     <CheckCheck size={15} />
                     Mark as Reviewed

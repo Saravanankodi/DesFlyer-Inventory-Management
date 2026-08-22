@@ -113,7 +113,7 @@ export default function Table({ variant }: TableProps) {
                 {/* Header */}
                 <div className="flex items-center justify-between px-4 py-4 sm:px-6">
 
-                    <h2 className="font-iceberg text-base text-black sm:text-xl">
+                    <h2 className="font-iceberg text-xl text-black sm:text-xl">
                         Recent Expenses
                     </h2>
 
@@ -126,7 +126,7 @@ export default function Table({ variant }: TableProps) {
                 {/* Table */}
                 <div className="w-full overflow-x-auto hide-scroll">
 
-                    <table className="w-full min-w-[700px]">
+                    <table className="w-full min-w-175">
 
                         <thead>
                             <tr className="bg-[#F7F8FC]">
@@ -237,7 +237,7 @@ export default function Table({ variant }: TableProps) {
 
                 <div className="w-full overflow-x-auto hide-scroll">
 
-                    <table className="w-full min-w-[700px]">
+                    <table className="w-full min-w-175">
 
                         <thead>
                             <tr className="bg-[#F0F2FF] grid-cols-6">
@@ -353,7 +353,7 @@ export default function Table({ variant }: TableProps) {
             {/* Header */}
             <div className="flex items-center justify-between px-4 py-4 sm:px-6">
 
-                <h2 className="font-iceberg text-2xl text-black sm:text-3xl">
+                <h2 className="font-iceberg text-xl sm:text-2xl text-black md:text-3xl">
                     Top 10 Highest Expenses
                 </h2>
 
@@ -367,7 +367,7 @@ export default function Table({ variant }: TableProps) {
             {/* Table */}
             <div className="w-full overflow-x-auto hide-scroll">
 
-                <table className="w-full min-w-[650px]">
+                <table className="w-full min-w-162.5">
 
                     <thead>
 
@@ -414,7 +414,7 @@ export default function Table({ variant }: TableProps) {
                                     {item.rank}
                                 </td>
 
-                                <td className="max-w-[180px] px-4 py-4 font-iceberg text-sm md:text-base text-black">
+                                <td className="max-w-45 px-4 py-4 font-iceberg text-sm md:text-base text-black">
                                     {item.name}
                                 </td>
 

@@ -45,7 +45,7 @@ export default function Levelbar({ variant }: LevelbarProps) {
         return (
             <div className="box w-full p-4 sm:p-5 lg:p-6">
 
-                <h2 className="font-iceberg text-2xl text-black sm:text-xl xl:text-3xl">
+                <h2 className="font-iceberg text-xl text-black sm:text-2xl xl:text-3xl">
                     Who are we spending for?
                 </h2>
 
@@ -115,7 +115,7 @@ export default function Levelbar({ variant }: LevelbarProps) {
         return (
             <div className="box w-full p-4 sm:p-5 lg:p-6">
 
-                <h2 className="font-iceberg text-2xl text-black sm:text-3xl mb-10">
+                <h2 className="font-iceberg text-xl md:text-3xl text-black sm:text-2xl mb-10">
                     Spending By Recipient
                 </h2>
 
@@ -196,7 +196,7 @@ export default function Levelbar({ variant }: LevelbarProps) {
         return (
             <div className="box w-full p-4 sm:p-5 lg:p-6">
 
-                <h2 className="font-iceberg text-2xl text-black sm:text-xl xl:text-3xl">
+                <h2 className="font-iceberg text-xl sm:text-2xl text-black md:text-xl xl:text-3xl">
                     What are we spending on?
                 </h2>
 
@@ -310,7 +310,7 @@ export default function Levelbar({ variant }: LevelbarProps) {
         return (
             <div className="box w-full p-4 sm:p-5 lg:p-6  md:space-y-15">
 
-                <h2 className="font-iceberg text-2xl text-black sm:text-3xl">
+                <h2 className="font-iceberg text-xl sm:text-2xl text-black md:text-3xl">
                     Category Breakdown
                 </h2>
 

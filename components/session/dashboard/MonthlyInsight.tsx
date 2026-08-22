@@ -10,13 +10,13 @@ import {
 import Tags from "@/components/base/Tags";
 import Button from "@/components/base/Button";
 import { useRouter } from "next/navigation";
-import { Star } from "@/components/icons";
+import  Star  from "@/components/icons/Star";
 
 export default function MonthlyInsight() {
     const router = useRouter();
     return (
         <section
-            className=" w-full flex overflow-hidden rounded-[20px] border border-border bg-white p-4 sm:p-6 lg:p-7">
+            className=" w-full flex overflow-hidden box p-4 sm:p-6 lg:p-7">
            
             {/* Main content */}
             <div className="w-full  flex flex-col sm:flex-row gap-6  items-center justify-between lg:gap-8 " >
@@ -47,7 +47,7 @@ export default function MonthlyInsight() {
                             />
 
                             <span
-                                className="font-iceberg text-base text-black sm:text-sm
+                                className="font-iceberg text-sm text-black sm:text-base md:text-sm
                                 "
                             >
                                 42 expenses

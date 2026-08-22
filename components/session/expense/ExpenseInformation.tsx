@@ -35,9 +35,9 @@ const information: InformationItem[] = [
 
 export default function ExpenseInformation() {
     return (
-        <section className="w-full rounded-[20px] border border-border bg-white p-5 shadow-sm sm:p-6 lg:p-7">
+        <section className="w-full box p-5 shadow-sm sm:p-6 lg:p-7">
 
-            <h2 className="font-iceberg text-3xl text-black sm:text-xl">
+            <h2 className="font-iceberg text-2xl text-black md:text-xl">
                 Expense Information
             </h2>
 

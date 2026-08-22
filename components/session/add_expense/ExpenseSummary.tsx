@@ -24,11 +24,11 @@ function SummaryRow({
     return (
         <div className="flex items-center justify-between gap-4">
 
-            <span className="font-iceberg text-lg text-secondary sm:text-lg">
+            <span className="font-inter text-base text-secondary sm:text-lg">
                 {label}
             </span>
 
-            <span className="max-w-[60%] text-right font-iceberg text-lg font-medium text-black sm:text-lg">
+            <span className="max-w-[60%] text-right font-inter text-base font-medium text-black sm:text-lg">
                 {value}
             </span>
 
@@ -43,15 +43,15 @@ export default function ExpenseSummary({
     amount = "₹ 0.00",
 }: ExpenseSummaryProps) {
     return (
-        <section className="w-full rounded-[18px] border border-border bg-white p-4 sm:p-5 lg:p-6">
+        <section className="w-full box p-4 sm:p-5 lg:p-6">
 
             {/* Header */}
-            <h2 className="font-iceberg text-2xl text-black sm:text-xl xl:text-3xl">
+            <h2 className="font-iceberg text-xl sm:text-2xl text-black  xl:text-3xl">
                 Expense Summary
             </h2>
 
             {/* Preview Card */}
-            <div className="mt-4 xl:mt-6 rounded-xl border border-border bg-white p-3.5 sm:p-4">
+            <div className="mt-4 xl:mt-6 box p-3.5 sm:p-4">
 
                 {/* Preview Header */}
                 <div className="flex items-center justify-between gap-2 border-b border-border pb-3">
@@ -63,7 +63,7 @@ export default function ExpenseSummary({
                             <FileText size={18} />
                         </span>
 
-                        <span className=" truncate font-inter text-lg font-semibold uppercase text-black sm:text-sm
+                        <span className=" truncate font-inter text-sm font-semibold uppercase text-black sm:text-sm
                         xl:text-xl">
                             Receipt Preview
                         </span>

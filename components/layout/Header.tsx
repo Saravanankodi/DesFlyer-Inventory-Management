@@ -22,12 +22,12 @@ const Header = ({
                 ${children
                     ?"w-[70%] md:full":"w-full"
                 }`}>
-                <h2 className={`font-iceberg text-3xl font-normal leading-tight text-black sm:text-4xl
+                <h2 className={`font-iceberg text-2xl font-normal leading-tight text-black sm:text-3xl md:text-4xl
                `}>
                     {heading}
                 </h2>
                 {description && (
-                    <p className="mt-1 font-iceberg text-sm text-secondary sm:text-sm md:text-base">
+                    <p className="mt-1 font-iceberg text-[13px] text-secondary sm:text-sm md:text-base">
                         {description}
                     </p>
                 )}

@@ -23,16 +23,16 @@ export default function LoginPage() {
 
             <div className="flex min-h-screen flex-col">
 
-                {/* Login Section */}
-                <section className="flex flex-1 flex-col items-center px-4 py-8 sm:py-8 md:py-8">
+             
+                <section className="flex flex-1 flex-col items-center px-4 py-4 sm:py-8 md:py-8">
 
-                    {/* Logo */}
+                  
                     <div className="flex flex-col items-center">
 
                         <img
                             src="/logo.png"
                             alt="DesFlyer"
-                            className="w-32 sm:w-36 md:w-40"
+                            className="w-40 sm:w-36 md:w-40"
                         />
 
                         <p className="mt-2 font-iceberg text-[10px] tracking-[0.25em] text-secondary sm:text-xs">
@@ -42,10 +42,10 @@ export default function LoginPage() {
                     </div>
 
 
-                    {/* Login Card */}
-                    <div className="mt-4 w-full max-w-130 rounded-2xl bg-white p-6 shadow-[0_8px_30px_rgba(0,0,0,0.08)] sm:mt-4 sm:p-7 md:p-6">
+                   
+                    <div className="mt-2 w-full max-w-130 rounded-2xl flex flex-col justify-center items-center sm:block  bg-white p-6 shadow-[0_8px_30px_rgba(0,0,0,0.08)] sm:mt-4 sm:p-7 md:p-6">
 
-                        {/* Tag */}
+                        
                         <Tags
                             words="WORKSPACE ACCESS"
                             color="text-primary"
@@ -53,27 +53,24 @@ export default function LoginPage() {
                         />
 
 
-                        {/* Heading */}
                         <div className="mt-3">
 
-                            <h1 className="font-iceberg text-[24px] leading-8 text-black sm:text-[26px]">
+                            <h1 className="font-iceberg text-center md:text-start text-[24px] leading-8 text-black sm:text-[26px]">
                                 Welcome Back
                             </h1>
 
-                            <p className="mt-1 font-iceberg text-sm leading-6 text-secondary sm:text-[15px]">
+                            <p className="mt-1 font-iceberg text-[13px] text-center md:text-start leading-6 text-secondary sm:text-[15px]">
                                 Login in to access your secure DesFlyer workspace.
                             </p>
 
                         </div>
 
 
-                        {/* Form */}
                         <form className="mt-5 space-y-5">
 
-                            {/* Email */}
                             <div>
 
-                                <label className="mb-2 block font-iceberg text-xs text-black sm:text-sm">
+                                <label className="mb-2 block font-iceberg text-sm text-black sm:text-sm">
                                     Work Email
                                 </label>
 
@@ -96,10 +93,9 @@ export default function LoginPage() {
                             </div>
 
 
-                            {/* Password */}
                             <div>
 
-                                <label className="mb-2 block font-iceberg text-xs text-black sm:text-sm">
+                                <label className="mb-2 block font-iceberg text-sm text-black sm:text-sm">
                                     Password
                                 </label>
 
@@ -136,7 +132,6 @@ export default function LoginPage() {
                             </div>
 
 
-                            {/* Remember / Forgot */}
                             <div className="flex items-center justify-between">
 
                                 <label className="flex cursor-pointer items-center gap-2">
@@ -167,7 +162,6 @@ export default function LoginPage() {
                             </div>
 
 
-                            {/* Login */}
                             <Button
                                 variant="primary"
                                 type="submit"
@@ -180,11 +174,9 @@ export default function LoginPage() {
                         </form>
 
 
-                        {/* Divider */}
                         <div className="my-5 border-t border-border" />
 
 
-                        {/* Security */}
                         <div className="flex items-center justify-center gap-2">
 
                             <Lock
@@ -201,7 +193,6 @@ export default function LoginPage() {
                     </div>
 
 
-                    {/* Login Information */}
                     <div className="mt-3 flex flex-wrap items-center justify-center gap-2 font-iceberg text-[10px] text-secondary sm:mt-7 sm:text-xs">
 
                         <span>© 2026 DesFlyer</span>
@@ -236,8 +227,6 @@ export default function LoginPage() {
 
                 </section>
 
-
-                {/* Existing Footer Component */}
                 <Footer />
 
             </div>

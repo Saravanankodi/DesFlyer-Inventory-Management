@@ -2,21 +2,20 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import {
-    House,
-    CirclePlus
-} from "lucide-react";
-import { Analysis, Expense } from "../icons";
+import Analysis from "../icons/Analysis"
+import Expense from "../icons/Expense"
+import Home from "../icons/Home"
+import Plus from "../icons/Plus"
 const menu = [
     {
         name: "Dashboard",
         href: "/",
-        icon: House,
+        icon: Home,
     },
     {
         name: "Add Expense",
         href: "/add-expense",
-        icon: CirclePlus,
+        icon: Plus,
     },
     {
         name: "Expense Records",

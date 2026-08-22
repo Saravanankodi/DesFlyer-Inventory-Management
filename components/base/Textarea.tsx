@@ -20,14 +20,14 @@ const Textarea = ({
         <div className="w-full">
 
             {label && (
-                <label className="mb-1.5 block font-inter text-xs md:text-sm xl:text-base text-secondary">
+                <label className="mb-1.5 block font-inter text-sm md:text-sm xl:text-base text-secondary">
                     {label}
                 </label>
             )}
 
             <textarea
                 {...props}
-                className={` min-h-[90px] w-full resize-none rounded-[20px] border border-border bg-white px-4 py-3 font-inter text-sm text-black outline-none transition-all placeholder:text-secondary/70 focus:border-primary 
+                className={` min-h-[90px] w-full resize-none box px-4 py-3 font-inter text-sm text-black outline-none transition-all placeholder:text-secondary/70 focus:border-primary 
                     ${error ? "border-red-500" : ""}
                     ${className}
                 `}

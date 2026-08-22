@@ -29,7 +29,7 @@ const Input = ({
 
             {/* Input Wrapper */}
             <div
-                className={` flex w-full items-center gap-3 rounded-[20px] border bg-white px-4 h-11 text-black transition-all duration-200
+                className={` flex w-full items-center gap-3 rounded-lg border bg-white px-4 h-11 text-black transition-all duration-200
 
                     ${error
                         ? "border-red-500 focus-within:border-red-500"

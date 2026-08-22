@@ -11,7 +11,7 @@ import { CalendarDays, ChevronDown, Download } from 'lucide-react'
 
 function Homepage() {
   return (
-    <div className="px-6 py-5 sm:px-5 sm:py-5 md:px-6 md:py-6 lg:px-8 lg:py-7 xl:px-10 space-y-5">
+    <div className="px-3 py-5 sm:px-5 sm:py-5 md:px-6 md:py-6 lg:px-8 lg:py-7 xl:px-10 space-y-5">
       <Header
         heading="Expense Dashboard"
         description="A clear view of Desflyer's spending this month."

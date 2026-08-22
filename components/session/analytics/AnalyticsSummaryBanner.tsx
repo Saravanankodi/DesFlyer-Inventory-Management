@@ -1,14 +1,7 @@
-import {
-    CalendarDays,
-    Clock3,
-    TrendingUp,
-    Users,
-} from "lucide-react";
-
 export default function AnalyticsSummaryBanner() {
     return (
         <section
-            className=" w-full rounded-[20px] border border-border bg-[#F1F3FF] px-4 py-4 shadow-sm
+            className=" w-full box bg-[#F1F3FF] px-4 py-4 shadow-sm
  sm:px-5 sm:py-5 lg:px-6
             "
         >
@@ -22,11 +15,11 @@ export default function AnalyticsSummaryBanner() {
                         
 
                         <div>
-                            <p className="font-inter text-[9px] sm:text-xs uppercase tracking-wide text-secondary">
+                            <p className="font-inter text-[8px] sm:text-[9px] md:text-xs uppercase tracking-wide text-secondary">
                                 PEAK SPENDING DAY                               
                             </p>
 
-                            <p className="mt-0.5 font-iceberg text-lg  text-black sm:text-lg">
+                            <p className="mt-0.5 font-iceberg text-base  text-black sm:text-lg">
                                 October 12th
                             </p>
                         </div>
@@ -37,11 +30,11 @@ export default function AnalyticsSummaryBanner() {
                        
 
                         <div>
-                            <p className="font-inter text-[9px] sm:text-xs uppercase tracking-wide text-secondary">
+                            <p className="font-inter text-[8px] sm:text-[9px] md:text-xs uppercase tracking-wide text-secondary">
                                 AVG DAILY BURN
                             </p>
 
-                            <p className="mt-0.5 font-iceberg text-lg  text-black sm:text-lg">
+                            <p className="mt-0.5 font-iceberg text-base  text-black sm:text-lg">
                                 ₹40,167
                             </p>
                         </div>
@@ -52,11 +45,11 @@ export default function AnalyticsSummaryBanner() {
                         
 
                         <div>
-                            <p className="font-inter text-[9px] sm:text-xs uppercase tracking-wide text-secondary">
+                            <p className="font-inter text-[8px] sm:text-[9px] md:text-xs uppercase tracking-wide text-secondary">
                                 APPROVAL VELOCITY
                             </p>
 
-                            <p className="mt-0.5 font-iceberg text-lg  text-black sm:text-lg">
+                            <p className="mt-0.5 font-iceberg text-base  text-black sm:text-lg">
                                 4.2 Hours
                             </p>
                         </div>

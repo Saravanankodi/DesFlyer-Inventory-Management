@@ -18,10 +18,10 @@ export default function DocumentationStatus({
     toReview = 4,
 }: DocumentationStatusProps) {
     return (
-        <section className="w-full rounded-[20px] border border-border bg-white p-5 sm:p-6">
+        <section className="w-full box p-5 sm:p-6">
 
             {/* Title */}
-            <h2 className="font-iceberg text-2xl text-black sm:text-xl xl:text-3xl">
+            <h2 className="font-iceberg text-xl sm:text-2xl text-black md:text-xl xl:text-3xl">
                 Documentation Status
             </h2>
 
@@ -36,7 +36,7 @@ export default function DocumentationStatus({
                     />
 
                     <div>
-                        <p className="font-iceberg text-base lg:text-lg text-black">
+                        <p className="font-iceberg text-sm sm:text-base lg:text-lg text-black">
                             {billsAttached} Bills Attached
                         </p>
 
@@ -54,7 +54,7 @@ export default function DocumentationStatus({
                     />
 
                     <div>
-                        <p className="font-iceberg text-base lg:text-lg text-red-500">
+                        <p className="font-iceberg text-sm sm:text-base lg:text-lg text-red-500">
                             {billsMissing} Bills Missing
                         </p>
 
@@ -72,7 +72,7 @@ export default function DocumentationStatus({
                     />
 
                     <div>
-                        <p className="font-iceberg text-base lg:text-lg text-black">
+                        <p className="font-iceberg text-sm sm:text-base lg:text-lg text-black">
                             {toReview} To Review
                         </p>
 

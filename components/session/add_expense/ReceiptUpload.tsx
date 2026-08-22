@@ -76,7 +76,7 @@ export default function ReceiptUpload({
                 <button
                     type="button"
                     onClick={() => inputRef.current?.click()}
-                    className=" flex min-h-50 w-full flex-col items-center justify-center rounded-lg border border-border bg-white px-4 py-5 text-center transition-all hover:border-primary hover:bg-primary/[0.02]
+                    className=" flex min-h-50 w-full flex-col items-center justify-center box px-4 py-5 text-center transition-all hover:border-primary hover:bg-primary/2
                     "
                 >
                     <span

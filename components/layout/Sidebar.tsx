@@ -5,15 +5,14 @@ import { usePathname } from "next/navigation";
 import {
     LayoutDashboard,
     CirclePlus,
-    FileText,
-    ChartNoAxesColumn,
     Settings,
     CircleHelp,
     Plus,
 } from "lucide-react";
 
 import Button from "../base/Button";
-import { Analysis, Expense } from "../icons";
+import  Analysis  from "../icons/Analysis";
+import  Expense  from "../icons/Expense";
 
 const menu = [
     {

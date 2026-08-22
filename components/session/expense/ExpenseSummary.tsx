@@ -20,7 +20,7 @@ export default function ExpenseSummary({
     createdBy = "Akash Sharma",
 }: ExpenseSummaryProps) {
     return (
-        <section className="w-full rounded-[20px] border border-border bg-white p-5 shadow-sm sm:p-6 lg:p-7">
+        <section className="w-full box p-5 shadow-sm sm:p-6 lg:p-7">
 
             {/* Top */}
             <div className="flex  gap-5 items-start justify-between">
@@ -55,7 +55,8 @@ export default function ExpenseSummary({
             <div className="my-5 h-px w-full bg-border" />
 
             {/* Details */}
-            <div className="flex flex-col gap-5 sm:flex-row items-center justify-evenly sm:gap-6">
+            <div className="flex justify-center items-center">
+            <div className="flex flex-col gap-5 sm:flex-row items-start justify-evenly sm:gap-6">
 
                 <div>
                     <p className="font-inter text-sm text-secondary">
@@ -93,6 +94,7 @@ export default function ExpenseSummary({
                     </p>
                 </div>
 
+            </div>
             </div>
 
         </section>

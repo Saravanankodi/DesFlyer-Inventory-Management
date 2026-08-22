@@ -68,7 +68,7 @@ export default function MonthlyExpenseTrend() {
 
     return (
         <section
-            className=" w-full rounded-[20px] border border-border bg-white px-5 py-6 sm:px-6 sm:py-7 md:px-8 md:py-8">
+            className=" w-full box px-5 py-6 sm:px-6 sm:py-7 md:px-8 md:py-8">
             
             <div
                 className=" flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
@@ -86,7 +86,7 @@ export default function MonthlyExpenseTrend() {
 
            
             <div
-                className=" mt-6 h-[300px] w-full sm:mt-8 sm:h-[330px] md:mt-10 xl:h-[380px]" >
+                className=" mt-6 h-75 w-full sm:mt-8 sm:h-82.5 md:mt-10 xl:h-95" >
                 <ResponsiveContainer
                     width="100%"
                     height="100%"

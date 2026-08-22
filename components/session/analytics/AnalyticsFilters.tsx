@@ -36,7 +36,7 @@ export default function AnalyticsFilters({
     return (
         <div className="w-full flex items-center justify-center">
             <div
-                className=" grid w-[100%] grid-cols-3 sm:grid-cols-6 gap-2 items-center justify-evenly
+                className=" grid w-full grid-cols-3 sm:grid-cols-6 gap-2 items-center justify-evenly
                 "
             >
                 {/* Dropdown Filters */}
@@ -45,7 +45,7 @@ export default function AnalyticsFilters({
                         key={filter.id}
                         type="button"
                         onClick={() => onFilterChange?.(filter.id)}
-                        className=" flex h-8 w-full items-center justify-between gap-2 rounded-[20px] border border-border bg-white px-3 font-iceberg text-xs sm:text-base text-black transition-all hover:border-primary hover:text-primary shadow-lg" >
+                        className=" flex h-10 w-full items-center justify-between gap-2 box px-3 font-iceberg text-xs sm:text-base text-black transition-all hover:border-primary hover:text-primary shadow-lg" >
                         <span className="truncate"> {filter.label}</span>
 
                         <ChevronDown
@@ -59,13 +59,13 @@ export default function AnalyticsFilters({
                 <Button
                     variant="date"
                     type="button"
-                    className=" m-0 min-w-20 w-full self-end  text-xs md:text-sm" >
+                    className=" m-0 max-w-40 md:min-w-45 self-end py-2 text-xs md:text-sm " >
                     <CalendarDays
-                        size={18}
+                        size={15}
                         className="text-primary"
                     />
 
-                    Oct 1 - Oct 31
+                    Oct 1-Oct 31
                 </Button>
               
             </div>

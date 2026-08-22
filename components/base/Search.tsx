@@ -14,7 +14,7 @@ export default function Search({
 }: SearchProps) {
     return (
         <div
-            className={` w-full h-10 flex items-center gap-3 px-4 rounded-xl border border-border bg-[#F1F3FF]
+            className={` w-full h-10 flex items-center gap-3 px-4 box bg-[#F1F3FF]
         ${className}
       `}
         >

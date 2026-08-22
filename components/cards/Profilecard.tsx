@@ -54,7 +54,7 @@ export default function Profilecard({
     const data = isEmployee ? employees : clients;
 
     return (
-        <section className="w-full rounded-[20px] border border-border bg-white p-5 shadow-sm sm:p-6">
+        <section className="w-full box p-5 shadow-sm sm:p-6">
 
             {/* Header */}
             <div className="flex items-center gap-2">
@@ -70,7 +70,7 @@ export default function Profilecard({
                     />
                 )}
 
-                <h2 className="font-iceberg text-2xl text-black sm:text-3xl">
+                <h2 className="font-iceberg text-xl sm:text-2xl text-black md:text-3xl">
                     {isEmployee
                         ? "Top Expensive Employees"
                         : "Top Expensive Clients"}
@@ -107,7 +107,7 @@ export default function Profilecard({
 
                         {/* Details */}
                         <div className="min-w-0 flex-1">
-                            <p className="truncate font-iceberg text-lg text-black sm:text-xl">
+                            <p className="truncate font-iceberg text-lg sm:text-lg text-black md:text-xl">
                                 {item.name}
                             </p>
 
